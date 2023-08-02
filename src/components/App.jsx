@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function App() {
+function Time() {
   let timeStart = new Date().toLocaleTimeString("it-IT");
   const [time, setTime] = useState(timeStart);
 
@@ -19,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default Time;
