@@ -1,5 +1,3 @@
-import logo from "./logo.svg";
-import "./App.css";
 import Time from "./components/App";
 
 function App() {
