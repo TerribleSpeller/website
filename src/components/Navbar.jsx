@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles.css";
 import Dipimg from "../img/DIP.png";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="container" id="Navbar">
@@ -26,29 +27,20 @@ const Navbar = () => {
           </div>
           <ul className="nav nav-pills">
             <li className="nav-item">
-              <a href="index.html" className="nav-link">
-                Home
-              </a>
+            <NavLink to="/"><span className="nav-link">Home</span></NavLink>
             </li>
             <li className="nav-item">
-              <a href="./pages/404page.html" className="nav-link">
-                Index
-              </a>
+            <NavLink to="/index"><span className="nav-link">Index</span></NavLink>
             </li>
             <li className="nav-item">
-              <a href="./pages/worldbuild-main.html" className="nav-link">
-                Worlds
-              </a>
+            <NavLink to="/worlds"><span className="nav-link">Worlds</span></NavLink>
             </li>
             <li className="nav-item">
-              <a href="./pages/404page.html" className="nav-link">
-                FAQs
-              </a>
+            <NavLink to="/faqs"><span className="nav-link">FAQs</span></NavLink>
             </li>
             <li className="nav-item">
-              <a href="./pages/404page.html" className="nav-link">
-                About
-              </a>
+            <NavLink to="/about"><span className="nav-link">About</span></NavLink>
+
             </li>
           </ul>
         </header>
