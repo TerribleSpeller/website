@@ -16,7 +16,7 @@ const Navbar = () => {
           />
           <div className="stacked-title mb-3 mb-md-0 me-md-auto link-body-emphasis">
             <a
-              href="index.html"
+              href="/"
               className="d-flex align-items-center mb-0 mb-md-0 me-md-auto link-body-emphasis link-color-unique text-decoration-none"
             >
               <span className="fs-4">TerribleSpeller's Personal Website</span>
@@ -25,22 +25,31 @@ const Navbar = () => {
               <i>Website so bad it gives actual programmers cancer</i>
             </span>
           </div>
-          <ul className="nav nav-pills">
+          <ul className="nav ">
             <li className="nav-item">
-            <NavLink to="/"><span className="nav-link">Home</span></NavLink>
+              <NavLink to="/" className="nav-link">
+                Home
+              </NavLink>
             </li>
             <li className="nav-item">
-            <NavLink to="/index"><span className="nav-link">Index</span></NavLink>
+              <NavLink to="/index" className="nav-link">
+                Index
+              </NavLink>
             </li>
             <li className="nav-item">
-            <NavLink to="/worlds"><span className="nav-link">Worlds</span></NavLink>
+              <NavLink to="/worlds" className="nav-link">
+                Worlds
+              </NavLink>
             </li>
             <li className="nav-item">
-            <NavLink to="/faqs"><span className="nav-link">FAQs</span></NavLink>
+              <NavLink to="/faqs" className="nav-link">
+                FAQs
+              </NavLink>
             </li>
             <li className="nav-item">
-            <NavLink to="/about"><span className="nav-link">About</span></NavLink>
-
+              <NavLink to="/about" className="nav-link">
+                About
+              </NavLink>
             </li>
           </ul>
         </header>
