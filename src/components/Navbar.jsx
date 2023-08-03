@@ -27,8 +27,7 @@ const Navbar = () => {
             <li className="nav-item">
               <a
                 href="index.html"
-                className="nav-link active"
-                aria-current="page"
+                className="nav-link"
               >
                 Home
               </a>
