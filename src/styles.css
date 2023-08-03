@@ -15,9 +15,14 @@ a:hover::before {
   content: "> ";
 }
 
+Hover:hover::before {
+  content: "> ";
+}
+/*
 li a:hover::before {
   content: "> ";
 }
+*/
 
 .icon {
   background-color: #8d7b68;
