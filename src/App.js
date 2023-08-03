@@ -9,7 +9,9 @@ function App() {
   return (
     <div>
       <Navbar />
-      <h1>Hello!</h1>
+      <div className="main-content">
+        <h1>Hello World!</h1>
+      </div>
       <Footer />
     </div>
   );

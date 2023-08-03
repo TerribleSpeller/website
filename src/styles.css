@@ -6,6 +6,9 @@ Legacy from original Website
   background-color: #c8b6a6;
   margin: 0;
   font-family: monospace;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 a:hover::before {
@@ -205,4 +208,9 @@ Unique Shit
     transition: opacity 0.15s linear,
       left var(--fnTransition) cubic-bezier(0.08, 0.72, 0.5, 0.94);
   }
+}
+
+/* Stuff made during React */
+.main-content {
+  flex: 1;
 }
