@@ -4,10 +4,9 @@ import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.css"; //!!Uses !important so overrides everything.
 import "./styles.css";
 
-
 function App() {
   return (
-    <div>
+    <div className="page-content">
       <Navbar />
       <div className="main-content">
         <h1>Hello World!</h1>
