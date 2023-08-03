@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles.css";
+import Dipimg from "../img/DIP.png";
 const Navbar = () => {
   return (
     <div className="container" id="Navbar">
@@ -9,7 +10,7 @@ const Navbar = () => {
             className="bi me-2 icon"
             width="60"
             height="60"
-            src="./images/DIP.png"
+            src={Dipimg}
             alt="Dippy"
           />
           <div className="stacked-title mb-3 mb-md-0 me-md-auto link-body-emphasis">
@@ -25,10 +26,7 @@ const Navbar = () => {
           </div>
           <ul className="nav nav-pills">
             <li className="nav-item">
-              <a
-                href="index.html"
-                className="nav-link"
-              >
+              <a href="index.html" className="nav-link">
                 Home
               </a>
             </li>
