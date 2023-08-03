@@ -225,3 +225,10 @@ Unique Shit
   flex-direction: column;
   min-height: 100vh;
 }
+
+.img-circle {
+  border-radius: 50%;
+  border: 7px solid #fff;
+  width: 120px;
+  height: 120px;
+}
