@@ -247,12 +247,13 @@ Unique Shit
   border-radius: 25px;
   position: relative;
   background-color: #deb5a2;
-  width: 80%;
+  width: 40%;
 }
 
 .card-stuff-top {
   background-color: #DECAAD;
   width: 100%;
+  position: relative;
 }
 
 .card-stuff-bottom {
