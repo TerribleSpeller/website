@@ -7,7 +7,7 @@ const Home = () => {
       <div className="Row">
         <div className="col-lg">
           <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div className="col p-4 d-flex flex-column position-static">
+            <div className="col p-4 d-flex flex-column position-static front-page-landing">
               <div className="d-flex flex-row">
                 <div
                   className="mx-auto"

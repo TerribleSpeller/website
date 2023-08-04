@@ -30,11 +30,11 @@ li a:hover::before {
 }
 
 .bg-brown {
-  background-color: #decaad;
+  background-color: #DEB5A2;
 }
 
 .bg-lessbrown {
-  background-color: #d4c6a5;
+  background-color: #C4A08F;
 }
 
 .border-rad-5 {
@@ -231,4 +231,14 @@ Unique Shit
   border: 7px solid #fff;
   width: 120px;
   height: 120px;
+}
+
+.cool-background {
+  background-color: #deb5a2;
+  background-image: url(img/grey-washed-wall.png);
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.front-page-landing {
+  background-color: #deb5a2;
 }
