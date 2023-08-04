@@ -30,11 +30,11 @@ li a:hover::before {
 }
 
 .bg-brown {
-  background-color: #DEB5A2;
+  background-color: #deb5a2;
 }
 
 .bg-lessbrown {
-  background-color: #C4A08F;
+  background-color: #c4a08f;
 }
 
 .border-rad-5 {
@@ -247,15 +247,19 @@ Unique Shit
   border-radius: 25px;
   position: relative;
   background-color: #deb5a2;
-  width: 40%;
+  width: 43%;
 }
 
 .card-stuff-top {
-  background-color: #DECAAD;
+  background-color: #decaad;
   width: 100%;
   position: relative;
 }
 
 .card-stuff-bottom {
-  background-color: #DECAAD;
+  background-color: #decaad;
+}
+
+.dualcardlayout-css {
+  height: 30em;
 }
