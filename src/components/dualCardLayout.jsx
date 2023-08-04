@@ -1,10 +1,20 @@
 import React from "react";
 import ContentCard from "./ContentCard.jsx";
-const DualCardLayout = () => {
+import Homepagecontent from "./content/HomePageContent.js";
+
+function createHomePageContent(content) {
   return (
-    <div className="col p-4 d-flex flex-lg-row flex-md-column position-static dualcardlayout-css">
-      <ContentCard />
-      <ContentCard />
+    <ContentCard
+      key={content.id}
+      title={content.title}
+      content={content.desc}
+    />
+  );
+}
+const DualCardLayout = (props) => {
+  return (
+    <div className="col p-4 d-flex flex-xl-row flex-column position-static dualcardlayout-css">
+      {Homepagecontent.map(createHomePageContent)}
     </div>
   );
 };
