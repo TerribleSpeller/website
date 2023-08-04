@@ -1,5 +1,6 @@
 import React from "react";
 import Dipimg from "../../img/DIP.png";
+import dualCardLayout from "../dualCardLayout.jsx";
 
 const Home = () => {
   return (
@@ -44,7 +45,9 @@ const Home = () => {
                 can possibly gain employment from it.
               </p>
             </div>
+            <dualCardLayout />
           </div>
+
         </div>
       </div>
     </div>
