@@ -242,3 +242,19 @@ Unique Shit
 .front-page-landing {
   background-color: #deb5a2;
 }
+
+.card-stuff {
+  border-radius: 25px;
+  position: relative;
+  background-color: #deb5a2;
+  width: 80%;
+}
+
+.card-stuff-top {
+  background-color: #DECAAD;
+  width: 100%;
+}
+
+.card-stuff-bottom {
+  background-color: #DECAAD;
+}

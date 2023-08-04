@@ -1,14 +1,12 @@
 import React from 'react';
-import contentCard from "./ContentCard.jsx" 
-const dualCardLayout = () => {
+import ContentCard from "./ContentCard.jsx" 
+const DualCardLayout = () => {
     return(
-        <div className="col p-4 d-flex flex-column position-static front-page-landing">
-            <div className="row flex-row d-flex">
-                <contentCard />
-                <contentCard />
-            </div>
+        <div className="col p-4 d-flex flex-row position-static">
+                <ContentCard />
+                <ContentCard />
         </div>
     );
 }
 
-export default dualCardLayout;
+export default DualCardLayout;

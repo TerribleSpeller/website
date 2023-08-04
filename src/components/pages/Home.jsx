@@ -1,13 +1,13 @@
 import React from "react";
 import Dipimg from "../../img/DIP.png";
-import dualCardLayout from "../dualCardLayout.jsx";
+import DualCardLayout from "../dualCardLayout.jsx";
 
 const Home = () => {
   return (
     <div className="container">
       <div className="Row">
         <div className="col-lg">
-          <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div className="row g-0 border flex-md-column d-flex rounded overflow-hidden mb-4 shadow-sm h-md-250 position-relative">
             <div className="col p-4 d-flex flex-column position-static front-page-landing">
               <div className="d-flex flex-row">
                 <div
@@ -45,8 +45,8 @@ const Home = () => {
                 can possibly gain employment from it.
               </p>
             </div>
-            <dualCardLayout />
           </div>
+          <DualCardLayout />
 
         </div>
       </div>
