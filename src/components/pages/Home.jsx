@@ -27,7 +27,7 @@ const Home = () => {
                 </div>
 
                 <div className="my-auto" style={{ "flex-grow": "1" }}>
-                  <h1>Welcome to my Website!</h1>
+                  <h1>Welcome To My Website!</h1>
                 </div>
               </div>
               <hr className="border border-white" />
