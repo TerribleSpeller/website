@@ -80,6 +80,7 @@ li a:hover::before {
 
 :not(#fakeID#fakeId#fakeID) .nav-link {
   color: #755951;
+  display: inline;
 }
 
 :not(#fakeID#fakeId#fakeID) .container {
@@ -247,7 +248,8 @@ Unique Shit
   border-radius: 25px;
   position: relative;
   background-color: #deb5a2;
-  width: 43%;
+  width: 45%; /*TODO: Figure how to make this responsive so on mobile it does not kill people*/
+  margin-bottom: 2vh;
 }
 
 .card-stuff-top {
@@ -261,5 +263,7 @@ Unique Shit
 }
 
 .dualcardlayout-css {
-  height: 20vh;
+  height: 33vh;
 }
+
+

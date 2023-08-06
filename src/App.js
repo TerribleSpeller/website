@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./components/pages/AboutUs";
 import Home from "./components/pages/Home";
 import Error from "./components/pages/Error";
+import Worlds from "./components/pages/Worlds";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
               <Route path="*" element={<Error />} />
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/worlds" element={<Worlds />} />
             </Routes>
           </div>
           <Footer />

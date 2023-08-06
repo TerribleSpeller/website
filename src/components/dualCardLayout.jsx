@@ -13,7 +13,7 @@ function createHomePageContent(content) {
 }
 const DualCardLayout = (props) => {
   return (
-    <div className="col p-4 d-flex flex-xl-row flex-column position-static dualcardlayout-css">
+    <div className="col p-4 d-flex flex-lg-row flex-column position-static dualcardlayout-css">
       {Homepagecontent.map(createHomePageContent)}
     </div>
   );

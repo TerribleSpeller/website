@@ -30,7 +30,7 @@ const Home = () => {
                   <h1>Welcome to my Website!</h1>
                 </div>
               </div>
-              <hr />
+              <hr className="border border-white" />
               <p
                 className="card-text mb-auto"
                 style={{ "text-align": "justify" }}
@@ -47,7 +47,6 @@ const Home = () => {
             </div>
           </div>
           <DualCardLayout />
-
         </div>
       </div>
     </div>

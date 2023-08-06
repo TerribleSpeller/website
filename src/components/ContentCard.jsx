@@ -5,9 +5,9 @@ function ContentCard(props) {
     <div className="d-flex rounded border card-stuff mx-auto">
       <div className="card-stuff-top mx-auto ">
         <div className="mx-3">
-          <h3
+          <h3 
             className="mt-2"
-            style={{ top: "50%", left: "50%", "text-align": "center" }}
+            style={{ top: "50%", left: "50%", "textAlign": "center" }}
           >
             {props.title}
           </h3>
