@@ -2,7 +2,7 @@ import React from 'react';
 
 const Error = () => {
     return(
-        <div className="Container">
+        <div className="container">
             <div className="Middle1Container">
                  <div className="textContainer"  style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', "flex-direction": 'column'}}>
                     <h1>Error <b>404</b> - Page Not Found</h1>

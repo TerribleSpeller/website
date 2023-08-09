@@ -176,7 +176,7 @@ Unique Shit
 .fnnum:hover + .fncon,
 .fncon:hover {
   opacity: 1;
-  right: var(--posX);
+  right: calc(var(--posX) - 10%);
   visibility: visible;
   transition: opacity 0.15s linear,
     right var(--fnTransition) cubic-bezier(0.08, 0.72, 0.5, 0.94);
@@ -186,7 +186,7 @@ Unique Shit
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(-102%) translateY(-55%) scale(1.15);
+  transform: translateX(-82%) translateY(-55%) scale(1.25);
   background-color: var(--fnColor, #d4c6a5);
   color: white;
   content: "*";
@@ -237,11 +237,19 @@ Unique Shit
 .cool-background {
   background-color: #deb5a2;
   background-image: url(img/grey-washed-wall.png);
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.world-cool-background {
+  background-color: #ebcda0;
+  background-image: url(img/embossed-paper.png);
 }
 
 .front-page-landing {
   background-color: #deb5a2;
+}
+
+:not(#fakeID#fakeId#fakeID#fakeID#fakeID#fakeID#fakeID#fakeID#fakeID#fakeID#fakeID#fakeID#fakeID#fakeID) #kaisarverse-content .overflow-yes {
+  overflow: visible !important;
 }
 
 .card-stuff {
