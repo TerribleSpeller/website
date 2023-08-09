@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.78cfa430.css",
-    "main.js": "/static/js/main.1e26d791.js",
-    "static/media/DIP.png": "/static/media/DIP.61162d424a74cd777273.png",
-    "static/media/grey-washed-wall.png": "/static/media/grey-washed-wall.c3452b780355befbbd9c.png",
-    "index.html": "/index.html",
-    "main.78cfa430.css.map": "/static/css/main.78cfa430.css.map",
-    "main.1e26d791.js.map": "/static/js/main.1e26d791.js.map"
+    "main.css": "/website/static/css/main.c2e806dc.css",
+    "main.js": "/website/static/js/main.1f6cf220.js",
+    "static/media/gmw-top.png": "/website/static/media/gmw-top.05b187cbd556076c3976.png",
+    "static/media/DIP.png": "/website/static/media/DIP.61162d424a74cd777273.png",
+    "static/media/grey-washed-wall.png": "/website/static/media/grey-washed-wall.c3452b780355befbbd9c.png",
+    "static/media/National_Flah.png": "/website/static/media/National_Flah.7215b80023202f576725.png",
+    "index.html": "/website/index.html",
+    "main.c2e806dc.css.map": "/website/static/css/main.c2e806dc.css.map",
+    "main.1f6cf220.js.map": "/website/static/js/main.1f6cf220.js.map"
   },
   "entrypoints": [
-    "static/css/main.78cfa430.css",
-    "static/js/main.1e26d791.js"
+    "static/css/main.c2e806dc.css",
+    "static/js/main.1f6cf220.js"
   ]
 }
