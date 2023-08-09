@@ -30,11 +30,11 @@ li a:hover::before {
 }
 
 .bg-brown {
-  background-color: #decaad;
+  background-color: #deb5a2;
 }
 
 .bg-lessbrown {
-  background-color: #d4c6a5;
+  background-color: #c4a08f;
 }
 
 .border-rad-5 {
@@ -80,6 +80,7 @@ li a:hover::before {
 
 :not(#fakeID#fakeId#fakeID) .nav-link {
   color: #755951;
+  display: inline;
 }
 
 :not(#fakeID#fakeId#fakeID) .container {
@@ -225,3 +226,44 @@ Unique Shit
   flex-direction: column;
   min-height: 100vh;
 }
+
+.img-circle {
+  border-radius: 50%;
+  border: 7px solid #fff;
+  width: 120px;
+  height: 120px;
+}
+
+.cool-background {
+  background-color: #deb5a2;
+  background-image: url(img/grey-washed-wall.png);
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.front-page-landing {
+  background-color: #deb5a2;
+}
+
+.card-stuff {
+  border-radius: 25px;
+  position: relative;
+  background-color: #deb5a2;
+  width: 45%; /*TODO: Figure how to make this responsive so on mobile it does not kill people*/
+  margin-bottom: 2vh;
+}
+
+.card-stuff-top {
+  background-color: #decaad;
+  width: 100%;
+  position: relative;
+}
+
+.card-stuff-bottom {
+  background-color: #decaad;
+}
+
+.dualcardlayout-css {
+  height: 33vh;
+}
+
+

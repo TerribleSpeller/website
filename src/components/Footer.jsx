@@ -7,7 +7,7 @@ const Footer = () => {
     const [year] = useState(timeStart)
 
     return(
-        <div className="container" id="Footer">
+        <div className="container border rounded-top" id="Footer">
             <div className="row bg-lessbrown">
                 <center>
                     <footer>
