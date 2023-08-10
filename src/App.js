@@ -19,10 +19,10 @@ function App() {
           <div className="main-content">
             <Routes>
               <Route path="*" element={<Error />} />
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/worlds" element={<Worlds />} />
-              <Route path="/worlds/kaisarverse" element={<KaisarverseMain />}/>
+              <Route path="/website/" element={<Home />} />
+              <Route path="/website/about" element={<About />} />
+              <Route path="/website/worlds" element={<Worlds />} />
+              <Route path="/website/worlds/kaisarverse" element={<KaisarverseMain />}/>
 
             </Routes>
           </div>

@@ -27,27 +27,27 @@ const Navbar = () => {
           </div>
           <ul className="nav ">
             <li className="nav-item pt-3">
-              <NavLink to="/" className="nav-link">
+              <NavLink to="/website/" className="nav-link">
                 Home
               </NavLink>
             </li>
             <li className="nav-item pt-3">
-              <NavLink to="/index" className="nav-link">
+              <NavLink to="/website/index" className="nav-link">
                 Index
               </NavLink>
             </li>
             <li className="nav-item pt-3">
-              <NavLink to="/worlds" className="nav-link">
+              <NavLink to="/website/worlds" className="nav-link">
                 Worlds
               </NavLink>
             </li>
             <li className="nav-item pt-3">
-              <NavLink to="/faqs" className="nav-link">
+              <NavLink to="/website/faqs" className="nav-link">
                 FAQs
               </NavLink>
             </li>
             <li className="nav-item pt-3">
-              <NavLink to="/about" className="nav-link">
+              <NavLink to="/website/about" className="nav-link">
                 About
               </NavLink>
             </li>

@@ -26,7 +26,7 @@ const KaisarverseMainContent = () => {
                 </div>
                 <div className="col-xl-4">
                     <div className="image-div">
-                        <img src={Flag} width="150" height="100" /><br />The current flag of the Empire.<span className="fnnum">.</span><span class="fncon">Such a beautiful flag, with such reviews as 'Unmitigated disaster of a flag design.', ' What is this unholy miscreation', & 'Eye-bleedingly patriotic.'</span>
+                        <img src={Flag} width="150" height="100" alt="Eye Bleedingly patriotic flag" /><br />The current flag of the Empire.<span className="fnnum">.</span><span className="fncon">Such a beautiful flag, with such reviews as 'Unmitigated disaster of a flag design.', ' What is this unholy miscreation', & 'Eye-bleedingly patriotic.'</span>
                     </div>
                 </div>
                 <div className="col-xl-12">
@@ -102,7 +102,53 @@ const KaisarverseMainContent = () => {
                         </div>
                       </div>
 
+            </div>
+            <div className="col px-4 pb-4 d-flex flex-column position-static bg-whites ">
+                <div className="row flex-row">
+                    <div className="col-xl-12">
+                    <br/>
+                    <br/>
+
+                          <p className="card-text mb-auto" style={{"text-align":"justify;"}}>Approxmiately 330 million Imperials, including allies, and approximately 3.6 billion Coalition citizens perished in the Thermonuclear exchange. The Empire, shouldering the thermonuclear exchange better thanks to being able to shoot down a portion of the missiles launching the payloads. The same was similar for the Coalition, but they underestimated the total number of missiles that would be fired from the Empire's side. Obliterating more cities than they ever could across their coalition. 
+                          </p>
+                          <br/>
+                          <p className="card-text mb-auto" style={{"text-align":"justify;"}}>With most of their enemy in ruin, the Empire moved on, unopposed with what remained of their allies as well to properly end the war. Repeating the procedures they made that brough them into Equestria-2 in the first place, they moved on to deal with remains of the Coalition. Anger striking out of their sword against an enemy who dared invade them. The Empire managed to ease with steamroll the remains of the Coalition, folding colonies and protectorcates out of the remnants... 
+                          </p>
+                          <br/>
+                          <p className="card-text mb-auto" style={{"text-align":"justify;"}}>It would be an understatement to say that the Great Multiversal War was both great and a near present idea within the Empire's mythos. One does not remove such a scarring and jarring incident away from a nation's collective consciousness easily, and for the remainder of the Empire's populations and its allies the scars of the war ran deep enough to become the foundational myth for their states after the war. And the war, would define the way the nations of the Multiversal Empire interacted in the future and how they saw themselves... </p>
+                      </div>
+
                     </div>
+                    <div className="col px-4 d-flex flex-column position-static  ">
+                    </div>
+                    <br/>
+                        <br/>
+                        <br/>
+                      <div className="row flex-row">
+                       
+                        <h3 className="d-inline-block mb-2" style={{"text-decoration":"underline;"}}><b>Overview</b></h3>
+                        <div className="col-xl-12">
+                          <p className="card-text mb-auto" style={{"text-align":"justify;"}}>Amassing across 156340000 square kilometres on its Homeworld of <strong><a href="../pages/404page.html " className="link-color-unique">Equus-001AB</a></strong>, the Empire is a large place. Burgeoning with a native population now recorded to be in the rough nine point seveteen (9.17) billions, the Empire - or as it is more commonly referred to as the 'Home Empire' - has no shortage of citizens. Streching from the soft mountain peaks of the western Xinmareland, to the bountiful and fish rich Hippogriffian Archipelago, there are Imperial Citizens there, living their lives as best they could under the gentle and auspicious glare of the bureaucratic regime. The governmental system of the Empire, is best described as their people are. Insane, crack addicted, actually innovative, butthurt, and just a wee bit psychotic. This, could be argued, might be an effect of having such a vibrant populace, but at the same time, when about 94.3% of the populace has at one point in their life been a bureaucrat, it makes you wonder if its the other way around and the development of state institutions in this way caused the 'vibrancy' of the people.
+                          </p>
+                          <br/>
+                          <p className="card-text mb-auto" style={{"text-align":"justify;"}}>But one has to consider that, how institutional development plays a role within the development of a culture, and vice versa. And this is a general fact that has to be kept in mind. The Empire as a sociopolitical entity, has most of its traits derived from the philosophical consequences of their most important figure being a political shut in, whilst at the same time being a contradictory mess of idiosyncaries masquearading the general form of a sapient being whilst being the ruler during the most important formative years of the state. These idiosyncaries, for better or worse, translate to a socio economic development along cultural lines of bureaucratic ascendency and a strong tradition of second guessing and stopping said second guessing by utilizing the foundational corner stones of modern nation-states and civilizations, writing. 
+                          </p>
+                          <br/>
+                          <p className="card-text mb-auto" style={{"text-align":"justify;"}}>The nation-state of MineLegotia and Equestria had evolved mainly to cater to the interests of bureaucratic and civilizational interests. The former to ensure that the state on its own could function well and supercede any issues that came from mortal rulers, and the latter to ensure that the nation could survive past any catastrophe with knowledge of their shared culutral and socio-lingual heritage. Directed by this, the nation-state could be seen as an organism moving to secure itself and ensure that it can continue living as an entity. With good coordination between the state's sturcture and the noosphere surroudning the concept of the nation, the state could realize its imagined community, and allowing the nation-state as a concept to ascend from the level of a imagined community to that of a entity-concept, which would in practice, often outlast particular imagined communities. The easiest way to contextualise this is to imagine the difference between the relation that ancient Rome has with modern Italy, and the relation that the Tang Dynasty has with Modern China. Italy as a concept can demonstrate a link that it has with ancient Rome, but it cannot properly demonstrate nor does it want to declare it to be Rome itself, but instead a distant descendant of it. The concept of the Roman nation was discarded in favor of the concept of the Italian nation instead. Contrast that modern China, on a whole attempts to convince its people that it is a direct continuation of ancient Chinese Dynasties such as the Tang. Declaring that this is merely the modern incarnation of the Chinese nation. This, is the situation for the noosphere regarding the concept of the nation-state of MineLegotia and Equestria, due to a heavy emphasis on the focus of preventing confusion by creating additional records, there isn't nary a doubt regarding the connection of the modern to the initial nation-state. </p>
+                          <br/>
+                          <p className="card-text mb-auto" style={{"text-align":"justify;"}}>With this conceptual structure, it can with ease make clear the nature of the Empire. The Kaisar's vision for a state which he could make a state that he could rule as according to his idiosyncaries, had resulted into a state suited well for the preservation of culture at a level much advanced and common compared to most other nations. Due to the fact that the one that ensured that the state could preserve their culture, and often through the actions of bureaucrats adapting the idiosyncaries of the Kaisar, the bureacurats would adapt into taking a role which saw them elavated sociologically. With this, the state ends up creating an environment in which sociological and cultural data survives at a rate much more significant than most other socities, allowing for a more cohesive societal structure in comparison to them.</p>
+                          <br/>
+                          <p className="card-text mb-auto" style={{"text-align":"justify;"}}>Societally, this has resulted in a much closer trust towards the government which allows for the state to exercise much more ease in managing the society. Of course, such closeness opens up for more dangerous exploitations of such trust, and has resulted in a more active society after the first dozen or so high level corruption cases. But nonetheless, the resulting structure could be argued to be similar to that of a 'Whig Government'. This type of government may be seen as relatively unstable and undesirable by some, but it is one that is mostly accepted by the people of the nation. After all they were all just but mortals, all except for the Lipas. The Lipas function in the state as a temporary tool in terms of time longer than the average lifespan. Due to the fear and rationale that the original social contract could potentially be manipulated over the years as people forget the idealistic foundation of their nation, the Lipas were roped in in order to maintain that social contract until a day where all could live as long as them. But this leads to the same situation of normal politicians with the Lipas being treated as any other politicians. Despite so, they can be affored some suspicison due to their unique role. The long term preservation of the nation-state's concepts.</p>
+                          <br />
+                          <p className="card-text mb-auto" style={{"text-align":"justify;"}}>Due to this, the mortal politicians have resulted in focusing on internal and domestic issues that concern the nation-state such as the healthcare services, industrial regulations, and roadside tollbooths. Whilst the Lipas focused on long term foreign policy, </p>
+                        </div>
+  
+
+
+                      </div>
+
+            </div>
+            
         </div>
 
     );
