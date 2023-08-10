@@ -8,6 +8,7 @@ import About from "./components/pages/AboutUs";
 import Home from "./components/pages/Home";
 import Error from "./components/pages/Error";
 import Worlds from "./components/pages/Worlds";
+import KaisarverseMain from "./components/pages/kaisarverse-main";
 
 function App() {
   return (
@@ -18,9 +19,11 @@ function App() {
           <div className="main-content">
             <Routes>
               <Route path="*" element={<Error />} />
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/worlds" element={<Worlds />} />
+              <Route path="/website/" element={<Home />} />
+              <Route path="/website/about" element={<About />} />
+              <Route path="/website/worlds" element={<Worlds />} />
+              <Route path="/website/worlds/kaisarverse" element={<KaisarverseMain />}/>
+
             </Routes>
           </div>
           <Footer />
