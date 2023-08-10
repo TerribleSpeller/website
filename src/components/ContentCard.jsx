@@ -2,7 +2,7 @@ import React from "react";
 
 function ContentCard(props) {
   return (
-    <div className="d-flex rounded border card-stuff mx-auto">
+    <div className="d-flex rounded border card-stuff mx-3">
       <div className="card-stuff-top mx-auto ">
         <div className="mx-3">
           <h3 

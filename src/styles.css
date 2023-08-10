@@ -256,7 +256,7 @@ Unique Shit
   border-radius: 25px;
   position: relative;
   background-color: #deb5a2;
-  width: 45%; /*TODO: Figure how to make this responsive so on mobile it does not kill people*/
+  width: 100%; /*Eh, it'll do*/
   margin-bottom: 2vh;
 }
 
