@@ -1,12 +1,22 @@
 import React from 'react'
 import Dipimg from "../public/images/DIP.png";
-import Link from 'next/link'
+import Link from 'next/link';
+import Head from 'next/head';
+
 import Image from 'next/image';
 
 
 //Don't know why I called it AboutUs when its just me. 
 const About = () => {
     return(
+        <>
+        <Head>
+        <title>About Me - TerribleSpeller's Website</title>
+        <meta
+        name="description"
+        content="TerribleSpeller's Website - The Website of a Worldbuilder who can't spell well"
+        />
+        </Head>
         <div className='container'>
             <div className="Row">
                 <div className="col-lg">
@@ -59,6 +69,7 @@ const About = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 }
 

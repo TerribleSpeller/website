@@ -8,7 +8,12 @@ import {NavBar} from '../components/Navbar.jsx'
 const Home = () => {
   return (
     <>
-      <Head><title>TerribleSpeller's Website</title></Head>
+      <Head><title>TerribleSpeller's Website</title>
+        <meta
+          name="description"
+          content="TerribleSpeller's Website - The Website of a Worldbuilder who can't spell well"
+          />
+      </Head>
       <div className="container">
         <div className="Row">
           <div className="col-lg">
