@@ -1,28 +1,30 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import Flag from "../../img/National_Flah.png"
-import GmwTop from "../../img/gmw-top.png"
-import img1 from "../../img/page-links/1.png"
-import img2 from "../../img/page-links/2.png"
-import img3 from "../../img/page-links/3.png"
-import img4 from "../../img/page-links/4.png"
-import img5 from "../../img/page-links/5.png"
-import img6 from "../../img/page-links/6.png"
-import img7 from "../../img/page-links/7.png"
-import img8 from "../../img/page-links/8.png"
-import img9 from "../../img/page-links/9.png"
-import img10 from "../../img/page-links/com.png"
+import Link from 'next/link'
+import Flag from "../../public/images/National_Flah.png"
+import GmwTop from "../../public/images/gmw-top.png"
+import img1 from "../../public/images/page-links/1.png"
+import img2 from "../../public/images/page-links/2.png"
+import img3 from "../../public/images/page-links/3.png"
+import img4 from "../../public/images/page-links/4.png"
+import img5 from "../../public/images/page-links/5.png"
+import img6 from "../../public/images/page-links/6.png"
+import img7 from "../../public/images/page-links/7.png"
+import img8 from "../../public/images/page-links/8.png"
+import img9 from "../../public/images/page-links/9.png"
+import img10 from "../../public/images/page-links/com.png"
+import Image from 'next/image';
+
 
 
 
 const KaisarverseMainContent = () => {
     return(
-      <div className="container">
+      <div className="">
         <div className="col p-4 d-flex flex-column position-static bg-brown-to-whitecream"> 
-        <h2 className="d-inline-block mb-2" style={{"text-decoration":"underline"}}><b>The Kaisarverse</b></h2>
+        <h2 className="d-inline-block mb-2" style={{"textDecoration":"underline"}}><b>The Kaisarverse</b></h2>
         <p className="card-text mb-auto" style={{"text-align":"justify;"}}>As all Empires are, for every Empire that discovered new land, a new axis to invade, came Imperialism to those axes. But rarely in the history of Multiverse have Empires discovered how to breach the veil between worlds and colonise between universes and timelines. But like everything ever written down, all permutations are possible, and came an Empire which had yet to breach its own planet orbit but pierced through the fabric between universes, and began their own journey of colonialism in betwixt universes.</p>
         <br />
-        <p className="card-text mb-auto" style={{"text-align":"justify"}}><NavLink className="link-color-unique" to="https://www.nationstates.net/nation=minelegotia_and_equestria">MineLegotia and Equestria</NavLink> is said Empire. An Empire that pierced the secrets of interuniversal travel in the wake of its great war, and began to spread among the different stories found in the Multiverse. Like room temperature bacteria, the Empire grows stronger and spreads further… but what point to an Empire? Like all things, there must be a reason for Imperialism, and empty platitudes provided by Empire-states will not be enough to explain their imperialistic tendencies. The Empire contradicts itselves with its Commonwealth nature, their claims of democracy clashing with outlander barbarism and slavery, their claims of evil rendered irrelevant by the actions of good from their citizens. The state is a contradiction, for an Empire is never a monolithic leviathan, and instead a series of individuals acting out their own lives amidst a convoluted political structure. Backstabs, hope, glory, tragedy, horrors, joy, romance, and a variety more are found in the Empire. 
+        <p className="card-text mb-auto" style={{"text-align":"justify"}}><Link className="link-color-unique" href="https://www.nationstates.net/nation=minelegotia_and_equestria"><span>MineLegotia and Equestria</span></Link> is said Empire. An Empire that pierced the secrets of interuniversal travel in the wake of its great war, and began to spread among the different stories found in the Multiverse. Like room temperature bacteria, the Empire grows stronger and spreads further… but what point to an Empire? Like all things, there must be a reason for Imperialism, and empty platitudes provided by Empire-states will not be enough to explain their imperialistic tendencies. The Empire contradicts itselves with its Commonwealth nature, their claims of democracy clashing with outlander barbarism and slavery, their claims of evil rendered irrelevant by the actions of good from their citizens. The state is a contradiction, for an Empire is never a monolithic leviathan, and instead a series of individuals acting out their own lives amidst a convoluted political structure. Backstabs, hope, glory, tragedy, horrors, joy, romance, and a variety more are found in the Empire. 
         </p>
         <br />
         <p className="card-text mb-auto" style={{"text-align":"justify"}}>To be a sapient in such times is to be one amongst uncatalogued trillions. To be in a state trying to assert its own ability to live up to its ideals yet struggling every step in trying to do so. To either live by ink or to be condemned to death by it. There is no such thing as a simple day in the Empire, for at the peak of civilization, the only enemy all must face is themselves and their ideals. 
@@ -37,7 +39,7 @@ const KaisarverseMainContent = () => {
             </div>
             <div className="col-xl-4">
                 <div className="image-div">
-                    <img src={Flag} width="150" height="100" alt="Eye Bleedingly patriotic flag" /><br />The current flag of the Empire.<span className="fnnum">.</span><span className="fncon">Such a beautiful flag, with such reviews as 'Unmitigated disaster of a flag design.', ' What is this unholy miscreation', & 'Eye-bleedingly patriotic.'</span>
+                    <Image src={Flag} width={150} height={100} alt="Eye Bleedingly patriotic flag" /><br />The current flag of the Empire.<span className="fnnum">.</span><span className="fncon">Such a beautiful flag, with such reviews as 'Unmitigated disaster of a flag design.', ' What is this unholy miscreation', & 'Eye-bleedingly patriotic.'</span>
                 </div>
             </div>
             <div className="col-xl-12">
@@ -66,7 +68,7 @@ const KaisarverseMainContent = () => {
                 <p className="card-text mb-auto" style={{"text-align":"justify;"}}>The world burned. Sisters armed against their fathers, brothers burying mothers, the deployment of Phosgene Gas against civilian and military targets, the razing of cities, death, destruction, and finally, nuclear strikes against Canterlot. 
                 </p>
                 <br />
-                <p className="card-text mb-auto" style={{"text-align":"justify;"}}>From 1023 to 1038 ALB, for fifteen years, the world of Eunia had itself a war which they never seen before. The first war of industrialized destruction. And it was to end with a single Empire, barely managing to survive itself, dragging the remnants of the old world together so they may build for themselves a future absent of horrid war. Under the guidance of one of the few remaining <strong><NavLink to="/concept/lipas" className="link-color-unique">Lipas</NavLink></strong>, the Kaisar of the Royal Confederacy of MineLegotia and Equestria, they hoped they shall no longer see war. And see but prosperity, but progress, but advancement, but equality, but inclusion, but justice, but most importantly above it all, peace!
+                <p className="card-text mb-auto" style={{"text-align":"justify;"}}>From 1023 to 1038 ALB, for fifteen years, the world of Eunia had itself a war which they never seen before. The first war of industrialized destruction. And it was to end with a single Empire, barely managing to survive itself, dragging the remnants of the old world together so they may build for themselves a future absent of horrid war. Under the guidance of one of the few remaining <strong><Link href="/concept/lipas" className="link-color-unique"><span>Lipas</span></Link></strong>, the Kaisar of the Royal Confederacy of MineLegotia and Equestria, they hoped they shall no longer see war. And see but prosperity, but progress, but advancement, but equality, but inclusion, but justice, but most importantly above it all, peace!
                 </p>
                 <br />
                 <p className="card-text mb-auto" style={{"text-align":"justify;"}}>And things got worse.
@@ -80,7 +82,7 @@ const KaisarverseMainContent = () => {
                       <br />
 
 
-                      <center><img src={GmwTop} style={{"max-width":"100%;", "max-height":"100%"}} alt="The Great Multiversal War" /></center>
+                      <center><Image src={GmwTop} style={{"max-width":"100%;", "max-height":"100%"}} alt="The Great Multiversal War" /></center>
                     </div>
                   </div>
         </div>
@@ -96,14 +98,14 @@ const KaisarverseMainContent = () => {
                       <p className="card-text mb-auto" style={{"text-align":"justify;"}}>Thus, as the Empire began rebuilding, it inherited a project from the remnants of the Equestrian governments regarding interuniversal travel based on the writings of an old unicorn wizard. Deciding that this was a worthwhile project, the Empire chose to start pursuing it in earnest. Perhaps, a new world could be found. With its new wonders and so, that the Empire could in a way, repent for the horrors they've committed. 
                       </p>
                       <br/>
-                      <p className="card-text mb-auto" style={{"text-align":"justify;"}}>Instead, they found an Equestria on the brink of war and collapsing into war as their own world as. Parasitic and inefficient aristocrats choking out the principality, as claimed by a stallion that was exiled and whom they first discovered. <strong><NavLink to="/char/preventus-i-eye" className="link-color-unique">Preventus I Eye</NavLink></strong>. Adopted quickly into the Imperial Family, the Kaisar directed the Empire for an encroaching upon this world to bring about their ideals of Harmony they've managed to forged out of war. Drawing in the states of <strong><NavLink to="/nation/snowlandia" className="link-color-unique">Snowlandia</NavLink></strong> and <strong><NavLink to="/nation/calavaria" className="link-color-unique">Calavaria</NavLink></strong> into their sphere, the Empire moved to topple the corrupt regime and sought to bring about Democracy to the region. A coup, a civil war, and arms being shipped into <strong><NavLink to="/planet/equus-2" className="link-color-unique">Equestria-2</NavLink></strong> allowed for the Empire to claim for themselves a new democratic protectorcate in the new world under the reign of the aforementioned Preventus. But unbeknownst to the Empire and Her new found allies, the old rulers of Canterlot, <strong><NavLink to="/char/the-deciever" className="link-color-unique">the Deciever</NavLink></strong>, ran off along with the rest of her deviled possy into other worlds to convince other Equestrias to launch a crusade back against the Empire.
+                      <p className="card-text mb-auto" style={{"text-align":"justify;"}}>Instead, they found an Equestria on the brink of war and collapsing into war as their own world as. Parasitic and inefficient aristocrats choking out the principality, as claimed by a stallion that was exiled and whom they first discovered. <strong><Link href="/char/preventus-i-eye" className="link-color-unique"><span>Preventus I Eye</span></Link></strong>. Adopted quickly into the Imperial Family, the Kaisar directed the Empire for an encroaching upon this world to bring about their ideals of Harmony they've managed to forged out of war. Drawing in the states of <strong><Link href="/nation/snowlandia" className="link-color-unique"><span>Snowlandia</span></Link></strong> and <strong><Link href="/nation/calavaria" className="link-color-unique"><span>Calavaria</span></Link></strong> into their sphere, the Empire moved to topple the corrupt regime and sought to bring about Democracy to the region. A coup, a civil war, and arms being shipped into <strong><Link href="/planet/equus-2" className="link-color-unique"><span>Equestria-2</span></Link></strong> allowed for the Empire to claim for themselves a new democratic protectorcate in the new world under the reign of the aforementioned Preventus. But unbeknownst to the Empire and Her new found allies, the old rulers of Canterlot, <strong><Link href="/char/the-deciever" className="link-color-unique"><span>the Deciever</span></Link></strong>, ran off along with the rest of her deviled possy into other worlds to convince other Equestrias to launch a crusade back against the Empire.
                       </p>
                       <br/>
-                      <p className="card-text mb-auto" style={{"text-align":"justify;"}}>An alliance of states were gathered up by the Deciever, and declaring the birth of the <strong><NavLink to="/nation/restorationist-equestrian-coalition" className="link-color-unique">Restorationist Equestrian Coalition</NavLink></strong>, they opened up portals once more on the eastside of the newly founded state of <strong><NavLink to="/nation/mleocun" className="link-color-unique">Mleocun</NavLink></strong> to take back their deceitful rule. The Empire battled with the Coalition. The Empire, a child of war, fostering along itself several younger nations with it as they picked up the sword once more to advance against their enemies, horrid autocrats and corrupt rulers. The Coalition, steadied itself as they prepared themselves for a righteous reclaimation and liberation of their old world. Both sides, did not knew of just how bad the war was going to become as by the second year, a stalemate occured on the center mountain ridges of Mleocun and the fighting grew bitter and regressed.</p>
+                      <p className="card-text mb-auto" style={{"text-align":"justify;"}}>An alliance of states were gathered up by the Deciever, and declaring the birth of the <strong><Link href="/nation/restorationist-equestrian-coalition" className="link-color-unique"><span>Restorationist Equestrian Coalition</span></Link></strong>, they opened up portals once more on the eastside of the newly founded state of <strong><Link href="/nation/mleocun" className="link-color-unique"><span>Mleocun</span></Link></strong> to take back their deceitful rule. The Empire battled with the Coalition. The Empire, a child of war, fostering along itself several younger nations with it as they picked up the sword once more to advance against their enemies, horrid autocrats and corrupt rulers. The Coalition, steadied itself as they prepared themselves for a righteous reclaimation and liberation of their old world. Both sides, did not knew of just how bad the war was going to become as by the second year, a stalemate occured on the center mountain ridges of Mleocun and the fighting grew bitter and regressed.</p>
                       <br/>
                       <p className="card-text mb-auto" style={{"text-align":"justify;"}}>The old nature of trench warfare slowly creeped back in. A novelty to the numerically superior Coalition and an ancient horror for the technologically ascendent Empire. Both sides saw themselves spiral into a feast of barbarism in the battles of the Mideast of Mleocun. With trench lines scattered up and down the Mareisisipi river, and often mountains serving as just but another type of land to dig trenches in. Each side saw themselves trading lives for inches of trenches that may with ease be retaken by the enemy for an equivalent magnitude of lives. A horror which saw notable rivers clogged up with bodies. </p>
                       <br/>
-                      <p className="card-text mb-auto" style={{"text-align":"justify;"}}>And when stagnation set in by the third year of fighting, desperation creeped its ugly head over the horizon to both sides as it increasingly became clear that the war will not end easily. Trench raids grew increasingly common, as so was the deployment of mustard gas as the Empire rolled out old tactics to break Coalition Lines. The Coalition responded by increasingly growing dependent on magically enhanced soldiers for desperate breakthroughs, and using spells to cast foul curses on Imperial troops. The Empire responded in kind with continued development of bioweapons and incidenary weapons. Incinerating all those that survived plagues and horrific monstrosities. But like all ladders, there was another rung to climb. And another. First came spells, then <strong><NavLink to="/concept/memetics" className="link-color-unique">Memetics</NavLink></strong>, then plaguebombs, then antimemetic viruses, then virulent pathogens. The trench battles slowly lost any sense of limitation to trenches. With powerful weapons, hundreds of kilometres of trenches could be lost in a day due to a particularly effective self replicating memetic attack driving all soldiers within it insane, or a particularly dastardly bioweapon simply murdering them all. Cities were levelled as gunfire traded fire with screeching noises of hell, virulent disease, and constant bombing. But yet, this was all still relatively limited to Mleocun. The main field of battle.</p>
+                      <p className="card-text mb-auto" style={{"text-align":"justify;"}}>And when stagnation set in by the third year of fighting, desperation creeped its ugly head over the horizon to both sides as it increasingly became clear that the war will not end easily. Trench raids grew increasingly common, as so was the deployment of mustard gas as the Empire rolled out old tactics to break Coalition Lines. The Coalition responded by increasingly growing dependent on magically enhanced soldiers for desperate breakthroughs, and using spells to cast foul curses on Imperial troops. The Empire responded in kind with continued development of bioweapons and incidenary weapons. Incinerating all those that survived plagues and horrific monstrosities. But like all ladders, there was another rung to climb. And another. First came spells, then <strong><Link href="/concept/memetics" className="link-color-unique"><span>Memetics</span></Link></strong>, then plaguebombs, then antimemetic viruses, then virulent pathogens. The trench battles slowly lost any sense of limitation to trenches. With powerful weapons, hundreds of kilometres of trenches could be lost in a day due to a particularly effective self replicating memetic attack driving all soldiers within it insane, or a particularly dastardly bioweapon simply murdering them all. Cities were levelled as gunfire traded fire with screeching noises of hell, virulent disease, and constant bombing. But yet, this was all still relatively limited to Mleocun. The main field of battle.</p>
                       <br/>
                       <p className="card-text mb-auto" style={{"text-align":"justify;"}}>The war kept going on, first a decade, then another, then a third more, then a century. By this point, the MineLegoEquestrians and arcane defectors from the Coalition had begun developing early motic-based genetic engineering, to try and stave off extinction from a weapon that both sides knew they both had. Nuclear weapons.</p>
                       <br/>
@@ -136,7 +138,7 @@ const KaisarverseMainContent = () => {
           <div className="row flex-row">
             <h3 className="d-inline-block mb-2" style={{"text-decoration":"underline;"}}><b>Overview</b></h3>
             <div className="col-xl-12">
-              <p className="card-text mb-auto" style={{"text-align":"justify;"}}>Amassing across 156340000 square kilometres on its Homeworld of <strong><a href="../pages/404page.html " className="link-color-unique">Equus-001AB</a></strong>, the Empire is a large place. Burgeoning with a native population now recorded to be in the rough nine point seveteen (9.17) billions, the Empire - or as it is more commonly referred to as the 'Home Empire' - has no shortage of citizens. Streching from the soft mountain peaks of the western Xinmareland, to the bountiful and fish rich Hippogriffian Archipelago, there are Imperial Citizens there, living their lives as best they could under the gentle and auspicious glare of the bureaucratic regime. The governmental system of the Empire, is best described as their people are. Insane, crack addicted, actually innovative, butthurt, and just a wee bit psychotic. This, could be argued, might be an effect of having such a vibrant populace, but at the same time, when about 94.3% of the populace has at one point in their life been a bureaucrat, it makes you wonder if its the other way around and the development of state institutions in this way caused the 'vibrancy' of the people.
+              <p className="card-text mb-auto" style={{"text-align":"justify;"}}>Amassing across 156340000 square kilometres on its Homeworld of <strong><a href="../pages/404page.html " className="link-color-unique"><span>Equus-001AB</span></a></strong>, the Empire is a large place. Burgeoning with a native population now recorded to be in the rough nine point seveteen (9.17) billions, the Empire - or as it is more commonly referred to as the 'Home Empire' - has no shortage of citizens. Streching from the soft mountain peaks of the western Xinmareland, to the bountiful and fish rich Hippogriffian Archipelago, there are Imperial Citizens there, living their lives as best they could under the gentle and auspicious glare of the bureaucratic regime. The governmental system of the Empire, is best described as their people are. Insane, crack addicted, actually innovative, butthurt, and just a wee bit psychotic. This, could be argued, might be an effect of having such a vibrant populace, but at the same time, when about 94.3% of the populace has at one point in their life been a bureaucrat, it makes you wonder if its the other way around and the development of state institutions in this way caused the 'vibrancy' of the people.
               </p>
               <br/>
               <p className="card-text mb-auto" style={{"text-align":"justify;"}}>But one has to consider that, how institutional development plays a role within the development of a culture, and vice versa. And this is a general fact that has to be kept in mind. The Empire as a sociopolitical entity, has most of its traits derived from the philosophical consequences of their most important figure being a political shut in, whilst at the same time being a contradictory mess of idiosyncaries masquearading the general form of a sapient being whilst being the ruler during the most important formative years of the state. These idiosyncaries, for better or worse, translate to a socio economic development along cultural lines of bureaucratic ascendency and a strong tradition of second guessing and stopping said second guessing by utilizing the foundational corner stones of modern nation-states and civilizations, writing. 
@@ -162,34 +164,34 @@ const KaisarverseMainContent = () => {
         <div className="col px-4 pb-4 d-flex flex-column position-static bg-whites">
           <div className="col d-flex flex-lg-row  flex-wrap flex-column position-static mx-auto">
             <div className="flex-grow-1 mx-auto" style={{ "display": "flex","align-items": "right", "justify-content": "center"}}>
-              <NavLink to="/website/kaisarverse/empire/foreign-relations" className="nav-link"><img src={img1} alt="Foreign Relations"/></NavLink>
+              <Link href="/kaisarverse/empire/foreign-relations" className="nav-link"><Image src={img1} alt="Foreign Relations"/></Link>
             </div>
             <div className="flex-grow-1" style={{ "display": "flex","align-items": "center", "justify-content": "center"}}>
-              <NavLink to="/website/kaisarverse/empire/armed-forces" className="nav-link"><img src={img2} alt="Armed Forces"/></NavLink>
+              <Link href="/kaisarverse/empire/armed-forces" className="nav-link"><Image src={img2} alt="Armed Forces"/></Link>
             </div>
             <div className="flex-grow-1" style={{ "display": "flex","align-items": "center", "justify-content": "center"}}>
-              <NavLink to="/website/kaisarverse/empire/demographics" className="nav-link"><img src={img3} alt="Demographics"/></NavLink>
+              <Link href="/kaisarverse/empire/demographics" className="nav-link"><Image src={img3} alt="Demographics"/></Link>
             </div>
             <div className="flex-grow-1" style={{ "display": "flex","align-items": "center", "justify-content": "center"}}>
-              <NavLink to="/website/kaisarverse/empire/culture" className="nav-link"><img src={img4} alt="Culture"/></NavLink>
+              <Link href="/kaisarverse/empire/culture" className="nav-link"><Image src={img4} alt="Culture"/></Link>
             </div>
             <div className="flex-grow-1" style={{ "display": "flex","align-items": "center", "justify-content": "center"}}>
-              <NavLink to="/website/kaisarverse/empire/constitution" className="nav-link"><img src={img5} alt="Constittution"/></NavLink>
+              <Link href="/kaisarverse/empire/constitution" className="nav-link"><Image src={img5} alt="Constittution"/></Link>
             </div>
             <div className="flex-grow-1" style={{ "display": "flex","align-items": "center", "justify-content": "center"}}>
-              <NavLink to="/website/kaisarverse/empire/economy" className="nav-link"><img src={img6} alt="Economy"/></NavLink>
+              <Link href="/kaisarverse/empire/economy" className="nav-link"><Image src={img6} alt="Economy"/></Link>
             </div>
             <div className="flex-grow-1" style={{ "display": "flex","align-items": "center", "justify-content": "center"}}>
-              <NavLink to="/website/kaisarverse/empire/bureaucracy" className="nav-link"><img src={img7} alt="Bureaucracy"/></NavLink>
+              <Link href="/kaisarverse/empire/bureaucracy" className="nav-link"><Image src={img7} alt="Bureaucracy"/></Link>
             </div>
             <div className="flex-grow-1" style={{ "display": "flex","align-items": "center", "justify-content": "center"}}>
-              <NavLink to="/website/kaisarverse/empire/history" className="nav-link"><img src={img8} alt="History"/></NavLink>
+              <Link href="/kaisarverse/empire/history" className="nav-link"><Image src={img8} alt="History"/></Link>
             </div>
             <div className="flex-grow-1" style={{ "display": "flex","align-items": "center", "justify-content": "center"}}>
-              <NavLink to="/website/kaisarverse/empire/govt" className="nav-link"><img src={img9} alt="Government"/></NavLink>
+              <Link href="/kaisarverse/empire/govt" className="nav-link"><Image src={img9} alt="Government"/></Link>
             </div>
             <div className="flex-grow-1" style={{ "display": "flex","align-items": "center", "justify-content": "center"}}>
-              <NavLink to="/website/kaisarverse/empire/commonwealth" className="nav-link"><img src={img10} alt="Commonwealth"/></NavLink>
+              <Link href="/kaisarverse/empire/commonwealth" className="nav-link"><Image src={img10} alt="Commonwealth"/></Link>
             </div>
 
            
@@ -198,7 +200,7 @@ const KaisarverseMainContent = () => {
             <br/>
             <br/>
 
-            <p style={{"font-size": "12px"}}>Art Credits to <a href="https://derpibooru.org/images/2068681" className="nav-link">Linkrichmay</a>, <a href="https://derpibooru.org/images/2298231?q=oc%3Astorm+surge" className="nav-link">LinkMysticalpha</a>, Equestria at War's smug griffon. Will be updated when I add more/find the artist's name.</p>
+            <p style={{"fontSIze": "12px"}}>Art Credits to <a href="https://derpibooru.org/images/2068681" className="nav-link">Linkrichmay</a>, <a href="https://derpibooru.org/images/2298231?q=oc%3Astorm+surge" className="nav-link">LinkMysticalpha</a>, Equestria at War's smug griffon. Will be updated when I add more/find the artist's name.</p>
         </div>
     </div>
   );

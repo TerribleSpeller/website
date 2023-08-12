@@ -1,7 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import KaisarverseMainContent from "../content/kaisarverse-main-content"
-import "../../styles.css";
 
 
 const KaisarverseMain = () => {
