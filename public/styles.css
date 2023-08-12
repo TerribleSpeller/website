@@ -1,0 +1,281 @@
+/*
+Legacy from original Website
+*/
+
+:not(#fakeID#fakeId#fakeID) body {
+  background-color: #c8b6a6;
+  margin: 0;
+  font-family: monospace;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+a :hover::before{
+  content: "> ";
+}
+
+
+/*
+li a:hover::before {
+  content: "> ";
+}
+*/
+
+.icon {
+  background-color: #8d7b68;
+  border-radius: 50%;
+}
+
+.bg-brown {
+  background-color: #deb5a2;
+}
+
+.bg-lessbrown {
+  background-color: #c4a08f;
+}
+
+.border-rad-5 {
+  border-radius: 5px;
+}
+
+.bg-whites {
+  background-color: #fcfbf4;
+}
+
+.bg-brown-to-whitecream {
+  background-image: linear-gradient(to bottom, #decaad, #fcfbf4);
+}
+
+.bg-whites-to-grey {
+  background-image: linear-gradient(to bottom, #fcfbf4, #cbcbcb);
+}
+
+:not(#fakeID#fakeId#fakeID) .bg-grey {
+  background-color: #cbcbcb;
+}
+
+:not(#fakeID#fakeId#fakeID) .bg-grey-to-white {
+  background-image: linear-gradient(to bottom, #cbcbcb, #fcfbf4);
+}
+
+/*
+    Modification of existiing Bootstraps classes because I don't like their asethethics
+*/
+
+:not(#fakeID#fakeId#fakeID) .nav-pills {
+  --bs-nav-pills-border-radius: var(--bs-border-radius);
+  --bs-nav-pills-link-active-bg: #fff5ed;
+}
+
+:not(#fakeID#fakeId#fakeID) .nav-pills .nav-link.active {
+  background-color: #807158;
+}
+
+:not(#fakeID#fakeId#fakeID) .nav {
+  --bs-nav-link-hover-color: #755951;
+}
+
+:not(#fakeID#fakeId#fakeID) .nav-link {
+  color: #755951;
+  display: inline;
+}
+
+:not(#fakeID#fakeId#fakeID) .container {
+  flex-wrap: wrap;
+}
+
+:not(#fakeID#fakeId#fakeID) .card-text {
+  text-align: justify;
+}
+
+/*
+Unique Shit
+*/
+
+.link-color-unique {
+  color: #755951;
+}
+
+.image-div {
+  width: auto;
+  margin: 0 0 15px 20px;
+  padding: 15px;
+  text-align: center;
+}
+
+/*Shit I stole from the SCP Wiki lmao*/
+
+#root {
+  --posX: calc(38% - 358px - 12rem);
+  --fnTransition: 0.3s;
+  --fnLinger: 0.15s;
+  --fnInteract: calc(var(--fnTransition) + var(--fnLinger));
+}
+
+/*--- Footnote Auto-counter --*/
+#main-content {
+  counter-reset: megacount;
+}
+
+/*--- Footnote Superscript Number --*/
+.fnnum {
+  display: inline-block;
+  width: max-content;
+  text-indent: -0.475ex;
+  vertical-align: super;
+  line-height: 80%;
+  word-break: initial;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: initial;
+  color: transparent;
+  position: relative;
+  font-size: 80%;
+  padding: 0.15em 0.05em;
+  margin-right: -0.25em;
+  counter-increment: megacount;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.fnnum::after {
+  content: "*";
+  color: var(--fnColor, #e6283c);
+}
+.fnnum:hover {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: var(--fnColor, #d4c6a5);
+}
+.fnnum:hover::after {
+  color: white;
+}
+
+/*--- Footnote Content Wrapper --*/
+.fncon {
+  position: absolute;
+  right: calc(var(--posX) + 300px);
+  line-height: 1.2;
+  padding: 0.8rem;
+  width: 15.3rem;
+  background: #decaad;
+  border: 2px solid black;
+  font-weight: initial;
+  font-style: normal;
+  text-align: initial;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9;
+  transition: opacity 0.15s linear var(--fnLinger),
+    right var(--fnTransition) cubic-bezier(0.08, 0.72, 0.5, 0.94)
+      var(--fnLinger),
+    visibility 0.01s linear var(--fnInteract);
+}
+.fnnum:hover + .fncon,
+.fncon:hover {
+  opacity: 1;
+  right: calc(var(--posX) - 10%);
+  visibility: visible;
+  transition: opacity 0.15s linear,
+    right var(--fnTransition) cubic-bezier(0.08, 0.72, 0.5, 0.94);
+}
+
+.fncon::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-82%) translateY(-55%) scale(1.25);
+  background-color: var(--fnColor, #d4c6a5);
+  color: white;
+  content: "*";
+  font-size: initial;
+  font-weight: bold;
+  font-style: initial;
+  padding: 0.18rem 0.32em 0.08rem;
+}
+
+/*--- Mobile Query --*/
+@media only screen and (max-width: 1279px) {
+  .fncon {
+    position: fixed;
+    bottom: 1.3rem;
+    left: calc(11% - 50px);
+    width: 70%;
+    transition: opacity 0.15s linear var(--fnLinger),
+      left var(--fnTransition) cubic-bezier(0.08, 0.72, 0.5, 0.94)
+        var(--fnLinger),
+      visibility 0.01s linear var(--fnInteract);
+  }
+  .fnnum:hover + .fncon,
+  .fncon:hover {
+    left: 11%;
+    transition: opacity 0.15s linear,
+      left var(--fnTransition) cubic-bezier(0.08, 0.72, 0.5, 0.94);
+  }
+}
+
+/* Stuff made during React */
+.main-content {
+  flex: 1;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.img-circle {
+  border-radius: 50%;
+  border: 7px solid #fff;
+  width: 120px;
+  height: 120px;
+}
+
+.cool-background {
+  background-color: #deb5a2;
+  z-index: -1;
+}
+
+.cool-background-2 {
+  z-index: 0;
+  background-image: url("./images/grey-washed-wall.png");
+
+}
+
+.world-cool-background {
+  /*background-color: #ebcda0;*/
+  background-image: url('./images/embossed-paper.png');
+}
+
+.front-page-landing {
+  background-color: #deb5a2;
+}
+
+:not(#fakeID#fakeId#fakeID#fakeID#fakeID#fakeID#fakeID#fakeID#fakeID#fakeID#fakeID#fakeID#fakeID#fakeID) #kaisarverse-content .overflow-yes {
+  overflow: visible !important;
+}
+
+.card-stuff {
+  border-radius: 25px;
+  position: relative;
+  background-color: #deb5a2;
+  width: 100%; /*Eh, it'll do*/
+  margin-bottom: 2vh;
+}
+
+.card-stuff-top {
+  background-color: #decaad;
+  width: 100%;
+  position: relative;
+}
+
+.card-stuff-bottom {
+  background-color: #decaad;
+}
+
+.dualcardlayout-css {
+  height: 33vh;
+}
+
+
