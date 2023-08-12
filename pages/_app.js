@@ -16,6 +16,7 @@ export default function MyApp({ Component, pageProps }) {
                   name="description"
                   content="TerribleSpeller's website"
               />
+                <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
           </Head>
           <NavBar />
           <div className="main-content">
