@@ -14,7 +14,7 @@ export default function MyApp({ Component, pageProps }) {
               <meta name="theme-color" content="#000000" />
               <meta
                   name="description"
-                  content="TerribleSpeller's website"
+                  content="TerribleSpeller's Website"
               />
                 <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
           </Head>

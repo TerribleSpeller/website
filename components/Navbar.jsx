@@ -35,22 +35,22 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item pt-3">
-              <Link href="/website/index" className="nav-link link-module">
+              <Link href="/index" className="nav-link link-module">
                 Index
               </Link>
             </li>
             <li className="nav-item pt-3">
-              <Link href="/website/worlds" className="nav-link link-module">
+              <Link href="/worlds" className="nav-link link-module">
                 Worlds
               </Link>
             </li>
             <li className="nav-item pt-3">
-              <Link href="/website/faqs" className="nav-link link-module">
+              <Link href="/faqs" className="nav-link link-module">
                 FAQs
               </Link>
             </li>
             <li className="nav-item pt-3 ">
-              <Link href="/website/about" className="nav-link link-module">
+              <Link href="/about" className="nav-link link-module">
                 About
               </Link>
             </li>

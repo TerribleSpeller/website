@@ -1,6 +1,8 @@
 import React from 'react'
-import Dipimg from '../../img/DIP.png'
-import { NavLink } from "react-router-dom";
+import Dipimg from "../public/images/DIP.png";
+import Link from 'next/link'
+import Image from 'next/image';
+
 
 //Don't know why I called it AboutUs when its just me. 
 const About = () => {
@@ -19,12 +21,12 @@ const About = () => {
                                 display: "flex",
                                 }}
                                 >
-                                <img
-                                className="img-circle mx-auto"
-                                src={Dipimg}
-                                alt="Cool Avatar I swear"
-                                style={{}}
-                                />
+                                    <Image
+                                    className={"img-circle mx-auto"}
+                                    src={Dipimg}
+                                    alt="Cool Avatar I swear"
+                                    />
+     
                                 </div>
 
                                 <div className="my-auto" style={{ "flex-grow": "1" }}>
@@ -36,7 +38,7 @@ const About = () => {
                                 className="card-text mb-auto"
                                 style={{ "text-align": "justify" }}
                                 >
-                                Hey, as introduced on the home page, <NavLink to="/" className="nav-link">Home Page</NavLink>, I'm Terriblespeller, an internet horse person with interests in programming, website design, writing stories, reviewing stories, drawing maps, and creating obscure lore via the means of unconvntional methods (like using maps to show socio-economic effects of a clearly fictional event). This website serves as an introduction to me and as also a playground for me to test out new programming skills. This About Us Page serves as both as a copy of the introduction on the Home Page, along with detailing with what this website was made with, and my contacts - so that in the rare case you want to talk with me, you can.</p>
+                                Hey, as introduced on the home page, <Link href="/" className="nav-link">Home Page</Link>, I'm Terriblespeller, an internet horse person with interests in programming, website design, writing stories, reviewing stories, drawing maps, and creating obscure lore via the means of unconvntional methods (like using maps to show socio-economic effects of a clearly fictional event). This website serves as an introduction to me and as also a playground for me to test out new programming skills. This About Us Page serves as both as a copy of the introduction on the Home Page, along with detailing with what this website was made with, and my contacts - so that in the rare case you want to talk with me, you can.</p>
                                 <br></br>
                                 <p className="card-text mb-auto"
                                 style={{ "text-align": "justify" }}> For note, this website was compiled utilizing Bootstrap, React.js, React-dom, and React-dom-router. I would've used Express.js and maybe even integrated mongoDB, but Github doesn't allow server side hosting, so until I have the finances to fund my own server with my own custom URL, that's not happening. 
