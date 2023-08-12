@@ -9,5 +9,4 @@
 
 ## Deployed with Next.js on Vercel 
 ### See it here
-https://website-terriblespeller.vercel.app/worlds/kaisarverse 
-
+https://website-terriblespeller.vercel.app/
