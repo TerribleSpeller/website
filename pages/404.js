@@ -1,22 +1,20 @@
 import React from 'react';
+import Error from '../components/pages/Error'
 import Head from 'next/head';
 
-import Worlds from '../components/pages/Worlds'
-
-const content = () => {
+const NoPageExists = () => {
     return(
-        <>
+        <>  
             <Head>
-                <title>Worlds - TerribleSpeller's Website</title>
+                <title>404 Error - TerribleSpeller's Website</title>
                 <meta
                  name="description"
                  content="TerribleSpeller's Website - The Website of a Worldbuilder who can't spell well"
                 />
             </Head>
-            <Worlds />
+            <Error />
         </>
-
-    )
+    );
 }
 
-export default content;
+export default NoPageExists;

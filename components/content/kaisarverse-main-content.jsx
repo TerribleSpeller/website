@@ -164,34 +164,34 @@ const KaisarverseMainContent = () => {
         <div className="col px-4 pb-4 d-flex flex-column position-static bg-whites">
           <div className="col d-flex flex-lg-row  flex-wrap flex-column position-static mx-auto">
             <div className="flex-grow-1 mx-auto" style={{ "display": "flex","align-items": "right", "justify-content": "center"}}>
-              <Link href="/kaisarverse/empire/foreign-relations" className="nav-link"><Image src={img1} alt="Foreign Relations"/></Link>
+              <Link href="/worlds/kaisarverse/empire/foreign-relations" className="nav-link"><Image src={img1} alt="Foreign Relations"/></Link>
             </div>
             <div className="flex-grow-1" style={{ "display": "flex","align-items": "center", "justify-content": "center"}}>
-              <Link href="/kaisarverse/empire/armed-forces" className="nav-link"><Image src={img2} alt="Armed Forces"/></Link>
+              <Link href="/worlds/kaisarverse/empire/armed-forces" className="nav-link"><Image src={img2} alt="Armed Forces"/></Link>
             </div>
             <div className="flex-grow-1" style={{ "display": "flex","align-items": "center", "justify-content": "center"}}>
-              <Link href="/kaisarverse/empire/demographics" className="nav-link"><Image src={img3} alt="Demographics"/></Link>
+              <Link href="/worlds/kaisarverse/empire/demographics" className="nav-link"><Image src={img3} alt="Demographics"/></Link>
             </div>
             <div className="flex-grow-1" style={{ "display": "flex","align-items": "center", "justify-content": "center"}}>
-              <Link href="/kaisarverse/empire/culture" className="nav-link"><Image src={img4} alt="Culture"/></Link>
+              <Link href="/worlds/kaisarverse/empire/culture" className="nav-link"><Image src={img4} alt="Culture"/></Link>
             </div>
             <div className="flex-grow-1" style={{ "display": "flex","align-items": "center", "justify-content": "center"}}>
-              <Link href="/kaisarverse/empire/constitution" className="nav-link"><Image src={img5} alt="Constittution"/></Link>
+              <Link href="/worlds/kaisarverse/empire/constitution" className="nav-link"><Image src={img5} alt="Constittution"/></Link>
             </div>
             <div className="flex-grow-1" style={{ "display": "flex","align-items": "center", "justify-content": "center"}}>
-              <Link href="/kaisarverse/empire/economy" className="nav-link"><Image src={img6} alt="Economy"/></Link>
+              <Link href="/worlds/kaisarverse/empire/economy" className="nav-link"><Image src={img6} alt="Economy"/></Link>
             </div>
             <div className="flex-grow-1" style={{ "display": "flex","align-items": "center", "justify-content": "center"}}>
-              <Link href="/kaisarverse/empire/bureaucracy" className="nav-link"><Image src={img7} alt="Bureaucracy"/></Link>
+              <Link href="/worlds/kaisarverse/empire/bureaucracy" className="nav-link"><Image src={img7} alt="Bureaucracy"/></Link>
             </div>
             <div className="flex-grow-1" style={{ "display": "flex","align-items": "center", "justify-content": "center"}}>
-              <Link href="/kaisarverse/empire/history" className="nav-link"><Image src={img8} alt="History"/></Link>
+              <Link href="/worlds/kaisarverse/empire/history" className="nav-link"><Image src={img8} alt="History"/></Link>
             </div>
             <div className="flex-grow-1" style={{ "display": "flex","align-items": "center", "justify-content": "center"}}>
-              <Link href="/kaisarverse/empire/govt" className="nav-link"><Image src={img9} alt="Government"/></Link>
+              <Link href="/worlds/kaisarverse/empire/govt" className="nav-link"><Image src={img9} alt="Government"/></Link>
             </div>
             <div className="flex-grow-1" style={{ "display": "flex","align-items": "center", "justify-content": "center"}}>
-              <Link href="/kaisarverse/empire/commonwealth" className="nav-link"><Image src={img10} alt="Commonwealth"/></Link>
+              <Link href="/worlds/kaisarverse/empire/commonwealth" className="nav-link"><Image src={img10} alt="Commonwealth"/></Link>
             </div>
 
            
