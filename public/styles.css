@@ -278,4 +278,67 @@ Unique Shit
   height: 33vh;
 }
 
+.infobox {
+  border: 1px solid #a2a9b1;
+  border-spacing: 3px;
+  background-color: #f8f9fa;
+  color: black;
+  margin: 0.5em 0 0.5em 1em;
+  padding: 0.2em;
+  float: right;
+  clear: right;
+  font-size: 88%;
+  line-height: 1.5em;
+  width: 30%;
+}
+
+.infobox-title {
+  font-size: 125%;
+  font-weight: bold;
+  text-align: center;
+  caption-side: top;
+  
+}
+
+.infobox-left {
+  padding-left: 3%;
+  vertical-align: top;
+  font-weight: bold;
+  width: 40%;
+
+}
+
+
+.infobox-right {
+  text-align: left;
+  font-size: 95%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.infobox-list {
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+.compare-table-top {
+  text-align: center;
+  font-size: 95%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.compare-table-body{
+  border-style: solid;
+  border-width: 1px;
+}
+
+.td-dumb-add-border {
+  border-style: solid;
+  border-width: 1px;
+  text-align: left;
+  padding-left:3%;
+  padding-right:2%;
+}
+
 
