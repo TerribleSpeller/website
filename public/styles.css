@@ -11,9 +11,19 @@ Legacy from original Website
   flex-direction: column;
 }
 
+a {
+  position: relative;
+}
+a:hover::before{
+  content: ">";
+  position: absolute;
+  right: 100%;
+}
+/*
 a :hover::before{
   content: "> ";
-}
+  
+}*/
 
 
 /*
