@@ -98,6 +98,21 @@ const KaisarverseDemographicsContent = () => {
                             According to the Statistical Bureau of MineLegotia and Equestria, the population of MineLegotia and Equestria as of February 2389 is at 10.435 billion, including foreign residents. The population of Imperial nationals only was 10.319 billion in December 2388. 
                         </p>
                         <br/>
+                        <h3>Population</h3>
+                        <hr></hr>
+                        <p className="card-text mb-auto" style={{"text-align":"justify;"}}>
+                            The population of the Empire consists of roughly 5.302.495.492 registered households, with a majority of 64.21% located in urban areas as of 2385. The population density of the Empire 67/km^2. A number that has been projected to continously increase to 100/km^2 by the end of 2400 if numbers continued to maintain at current pace. 
+                        </p>
+                        <br/>
+                        <p className="card-text mb-auto" style={{"text-align":"justify;"}}>
+                            This large clustering of the population within urban centres and still leaving a notable minority in the rural areas have forced the Empire to coordinate massive transporation and infrastructual projects in order to service everybody. Major cities remain the main target of migration from the rural areas, for young people seeking jobs and education.  
+                        </p>
+                        <br/>
+                        <h4>Census</h4>
+                        <p className="card-text mb-auto" style={{"text-align":"justify;"}}>
+                            Minelegotia and Equestria collects census information every five years, with censuses conducted by the Statistics Bureau of the Ministry of Home Affairs. The latest population census reflects the situation as of 2385. 
+                        </p>
+                        <br/>
                         <h3>Species</h3>
                         <hr/>
                         <figure>
