@@ -15,9 +15,10 @@ a {
   position: relative;
 }
 a:hover::before{
-  content: ">";
+  content: "> ";
   position: absolute;
   right: 100%;
+  padding: 2px;
 }
 /*
 a :hover::before{
