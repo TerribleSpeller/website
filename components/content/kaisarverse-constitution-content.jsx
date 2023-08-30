@@ -306,13 +306,13 @@ const KaisarverseConstitutionContent = () => {
                     <p className="card-text mb-auto" style={{"text-align":"justify;"}}>
 
 
-                        <b>Article 15.</b> The Kaisar shall administer the Empire in its entirety, and deal with the day-to-day running of the Empire.
+                        <b>Article 15.</b> The Kaisar shall administer the Empire in its entirety, and deal with the long-term running of the Empire. The interim and short term issues, domestic, and economic shall be decided by the States as outlined in Section 6. The Imperial Government and, or the Kaisar, may render rule of domestic issues if States permit such an action.
 
                         </p>
                     <br/>
                     <p className="card-text mb-auto" style={{"text-align":"justify;"}}>
 
-                        <b>Article 16.</b> The Kaisar may be assisted by Ministries for the day-to-day administration of the Empire, with the confirmation of the National Parliament. 
+                        <b>Article 16.</b> The Kaisar and the Imperial Government may be assisted by Ministries for the day-to-day administration of the Empire, with the confirmation of the National Parliament. 
                         <ul><li>The Formation, change, and Dissolution of Ministries shall be regulated by Imperial law.</li></ul>
 
                         </p>
@@ -462,7 +462,7 @@ const KaisarverseConstitutionContent = () => {
                     <br/>
                     <p className="card-text mb-auto" style={{"text-align":"justify;"}}>
 
-                        <b>Article 35.</b> All the states within MineLegotia and Equestria may adopt a constitution of their own, under the condition it uses this document as a basis. 
+                        <b>Article 35.</b> All the states within MineLegotia and Equestria may adopt a constitution of their own, under the condition it uses this document as a basis. For the Empire was formed to protect the States' interests, and such, their soverignty to dictate their own laws must be respected by the Imperial Government. 
 
                         </p>
                     <br/>
@@ -603,6 +603,9 @@ const KaisarverseConstitutionContent = () => {
 
                         <b>Article 52.</b> The National Parliament with a two-thirds majority, when necessary, may propose amendments to this Constitution, with approval from an absolute majority of all States within the Empire. Provided that the Amendment does not affect the Articles 2, 9, 10, 11, 12, 13, & 14, of this document. 
 
+                        <br/>
+                        <br/>
+
                         <b>Article 53.</b> In order for a vote on an Amendment to be commenced, at least a third of representatives from each state should be present. 
 
                         </p>
@@ -683,9 +686,6 @@ const KaisarverseConstitutionContent = () => {
                     <p className="card-text mb-auto" style={{"text-align":"justify;"}}>
 
                         <b>Tenth Amendment. Section One.</b>  Understanding the vast overreach of the Imperial Government, it is imperative an Ethics Committee shall be formed to ensure proper procedural ongoings within the Imperial Government are in line with the Constitution and basic morality. 
-
-
-                        <b>Tenth Amendment. Section Three.</b> The Ethics Committee will be regulated by the National Parliament by appropriate legislation. 
 
                         </p>
                         <br/>
