@@ -29,8 +29,28 @@ const KaisarverseForeignRelationsContent = () => {
                         The foreign policy of the Empire has evolved over time and has been shaped by various factors such as its historical context, multiversal contacts, national interests, and leadership. Here is an overview of the historical context of the Empire's foreign policy:
                     </p> 
                     <ul>
-                        <li>Founding Principles: The Empire is founded with the aims and goals of protecting the interests of the </li>
+                        <li>Founding Principles: The Empire is founded with the aims and goals of protecting the interests of its constituent states. And thus the Empire acts based on such principles.</li>
+                        <li>Territorial Integrity: The Empire places great importance on its territorial soverignty. And thus efforts are made to ensure that the Empire's territories remain safe from foreign interventions and rebellions from within it.</li>
+                        <li>Societal Development: The Empire also places importance on societal development within and without its borders. If possible, the Empire encourages societal development through foreign aid, military intervention, and bilateral cooperation between states. </li>
+                        <li>Economic Development: The Empire is going through what many consider a 'malpopulation crisis'. With the Empire having much capability to expand and consists of a lot of land, but not enough people to develop it. And thus, the Empire seeks out populous and growing states by securing economic ties, exchanging national development for manpower for the Empire to develop itself effectively. </li>
+                        <li>Commonwealth and Extra-Commonwealth Multilateralism: The Empire participates in various multilateral organizations with a goal to contribute to peace, security, and prosperity among nations. Usually by hosting and facilitating multilateral dialogues and fostering cooperation.</li>
                     </ul>
+                    <br/>
+                    <h3>Significant International Memberships</h3>
+                    <hr/>
+                    <h4>Commonwealth Cooperation Organisation (CCO)</h4>
+                    <p className="card-text mb-auto" style={{"text-align":"justify;"}}>
+                        The cornerstone of Imperial Foreign Diplomacy is its participation in the <Link href="/worlds/kaisarverse/org/commonwealth-cooperation-organisation" className="link-color-unique">Commonwealth Cooperation Organisation</Link>. Created by the Empire itself, the organisation serves as a forum for what is informally known as the 'Commonwealth System', and is hosts the 'The Commonwealth Council' and serves as the basis for the transnational Commonwealth ministries including the International Astronomical Coordination Ministry, the Multiversal Managements Ministry, International Interdimensional Portal Management Ministry, and the International Climate Management Ministry. 
+                    </p> 
+                    <br/>
+                    <p className="card-text mb-auto" style={{"text-align":"justify;"}}>
+                        The CCO hosts its Commonwealth Council within the Imperial Capital of MinLegtian Kantelouh, where it regularly engages in dialogue and coordinates with its Member States regarding international issues and work with them in order to achieve its foreign policy objectives. Without the CCO, most contemporary scholars agree that the Empire would not be able to retain such an influence it has now as the organisation as a whole acts as a testament to the capbilities of the Empire and its commitment to treaties and peaceful dialogue. 
+                    </p> 
+                    <br/>
+                    <h4>Confederation of Corrupt Dictators (CCD)</h4>
+                    <p className="card-text mb-auto" style={{"text-align":"justify;"}}>
+                        The sheer absurdity of a semi-democratic state chilling in the Confed
+                    </p> 
             </div>
         </>
     )
