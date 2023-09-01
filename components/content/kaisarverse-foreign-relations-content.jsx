@@ -338,6 +338,54 @@ const KaisarverseForeignRelationsContent = () => {
                                 </tr>
                             </tbody>
                         </table>
+                        <h4>Notable Relations</h4>
+                        <table className="general-table">
+                            <thead>
+                                <tr>
+                                    <th className="infobox-left" role="columnheader button" title="Sort ascending">Country
+                                    </th>
+                                    <th className="" title="Sort ascending">Relations Type
+                                    </th>
+                                    <th className="infobox-right" title="Sort ascending">Notes
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td className="infobox-left">
+                                    <Link href="https://www.nationstates.net/nation=salcanceacy" className="link-color-unique">The Kingdom of Salcanceacy</Link>
+                                    </td>
+                                    <td className="" style={{"captionSide": "top"}}>
+                                    Allied
+                                    </td>
+                                    <td className="infobox-right">
+                                    Salcanceacy and the Empire have a unique relationship that goes back a long time, during interventions within specific regions in the Multiverse. This was in addition to them also being a founding member of <Link href="/worlds/kaisarverse/org/the-stockholm-accord" className="link-color-unique">The Stockholm Accord</Link>, which solidified the two nations relationships.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className="infobox-left">
+                                    <Link href="https://www.nationstates.net/nation=regna_loreau" className="link-color-unique">The Imperial Federation of Regna Loreau</Link>
+                                    </td>
+                                    <td className="">
+                                    Allied
+                                    </td>
+                                    <td className="infobox-right">
+                                    Regna Loreau have a unique relationship apart from also being part of the Stockholm Accord. That was that the Loreauan and the Empire both have strategic intrests within the CCD, and both aim to transform into a more formal and proper organisation. This relationship is also further solidifed with strong military ties between the two Empires.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className="infobox-left">
+                                    <Link href="/worlds/kaisarverse/nation/threstlia" className="link-color-unique">The United States of Threstlia</Link>
+                                    </td>
+                                    <td className="">
+                                    Allied
+                                    </td>
+                                    <td className="infobox-right">
+                                    The relations between the Multiversal Empire and this state can be considered friendly due to the Empire supporting its independence during the South Eastern Insurgency. The Empire came in to assist them after continued disagreements with the local Perdeland government.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
             </div>
         </>
