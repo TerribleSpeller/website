@@ -303,6 +303,16 @@ Unique Shit
   width: 30%;
 }
 
+.general-table {
+  border: 1px solid #a2a9b1;
+  background-color: #f8f9fa;
+  color: black;
+  padding: 0.2em;
+  font-size: 88%;
+  line-height: 1.5em;
+  width: 100%;
+}
+
 .infobox-title {
   font-size: 125%;
   font-weight: bold;
