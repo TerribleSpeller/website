@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Dipimg from "../public/images/DIP.png";
 import Head from 'next/head';
 import Link from 'next/link'
+import CustomButton from '../components/randomSubtitle'
 
 const Navbar = () => {
   return (
@@ -25,7 +26,8 @@ const Navbar = () => {
               <span className="fs-4">TerribleSpeller's Personal Website</span>
             </a>
             <span className="fs-6">
-              <i>Website so bad it gives actual programmers cancer</i>
+              {/*<i id="subtitle">Website so bad it gives actual programmers cancer</i>*/}
+              <CustomButton />
             </span>
           </div>
           <ul className="nav ">
@@ -59,6 +61,7 @@ const Navbar = () => {
         <header className="d-flex flex-wrap justify-content mb-5 pb-2 border-bottom"></header>
       </div>
     </div>
+    
   );
 };
 
