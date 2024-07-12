@@ -13,7 +13,7 @@ import img8 from "../../public/images/page-links/8.png"
 import img9 from "../../public/images/page-links/9.png"
 import img10 from "../../public/images/page-links/com.png"
 import Image from 'next/image';
-import Map from "../../public/images/maps/TheWorldMap.png"
+
 
 
 
@@ -47,7 +47,7 @@ const KaisarverseMainContent = () => {
             </div>
           </div>
           <div className="col-xl-12">
-            <Image src={Map}   alt="A Very Big Map. Open in New Tab is recommended" width={3000} height={1688} layout="responsive" sizes="(max-width: 768px) 100vw, 33vw" priority /><br />
+            <Image src="https://i.ibb.co/qjWPy0s/The-World-Map.png"   alt="A Very Big Map. Open in New Tab is recommended" width={3000} height={1688} layout="responsive" sizes="(max-width: 768px) 100vw, 33vw" priority /><br />
             <center><span className="center" placeholder="blur" style={{ "text-align": "center"}} >The Map of the World of Dunnyet (Recommended to open in a new Tab)</span><span className="fnnum">.</span><span className="fncon">Dunnyet is the agreed upon name for the planet where the Empire resides.</span></center>
           </div>
           <div className="col-xl-12">
