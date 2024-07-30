@@ -1,6 +1,6 @@
 import React from "react";
 import Link from 'next/link'
-import Flag from "../../public/images/National_Flah.png"
+import Flag from "../../public/images/NewFlag.png"
 import GmwTop from "../../public/images/gmw-top.png"
 import img1 from "../../public/images/page-links/1.png"
 import img2 from "../../public/images/page-links/2.png"
@@ -43,12 +43,12 @@ const KaisarverseMainContent = () => {
           </div>
           <div className="col-xl-4">
             <div className="image-div">
-              <Image src={Flag} width={150} height={100} alt="Eye Bleedingly patriotic flag" /><br />The current flag of the Empire.<span className="fnnum">.</span><span className="fncon">Such a beautiful flag, with such reviews as 'Unmitigated disaster of a flag design.', ' What is this unholy miscreation', & 'Eye-bleedingly patriotic.'</span>
+              <Image src={Flag} width={200} height={100} alt="Eye Bleedingly patriotic flag" /><br />The current flag of the Empire.<span className="fnnum">.</span><span className="fncon">Such a beautiful flag, with such reviews as 'Unmitigated disaster of a flag design.', ' What is this unholy miscreation', & 'Eye-bleedingly patriotic.'</span>
             </div>
           </div>
           <div className="col-xl-12">
-            <Image src="https://i.ibb.co.com/gMvWWFq/1-0-No-Cities-Artboard-1-2-5x.png"   alt="A Very Big Map. Open in New Tab is recommended" width={2000} height={1688} layout="responsive"  sizes="(max-width: 768px) 100vw, 33vw" priority /><br />
-            <center><span className="center" style={{ "text-align": "center"}} >The Map of the World of Dunnyet (Recommended to open in a new <Link href="https://ibb.co.com/vqQKwsP">Tab</Link>)</span><span className="fnnum">.</span><span className="fncon">Dunnyet is the agreed upon name for the planet where the Empire resides.</span></center>
+            <Image src="https://i.ibb.co.com/VvTmLcw/Minime-Version.png"   alt="A Very Big Map. Open in New Tab is recommended" width={1000} height={844} layout="responsive" priority /><br />
+            <center><span className="center" style={{ "text-align": "center"}} >The Map of the World of Dunnyet (Recommended to open in a new <Link href="https://ibb.co.com/NNX9HMJ">Tab</Link>)</span><span className="fnnum">.</span><span className="fncon">Dunnyet is the agreed upon name for the planet where the Empire resides.</span></center>
           </div>
           <div className="col-xl-12">
             <br />
