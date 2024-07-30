@@ -47,8 +47,8 @@ const KaisarverseMainContent = () => {
             </div>
           </div>
           <div className="col-xl-12">
-            <Image src="https://i.ibb.co/qjWPy0s/The-World-Map.png"   alt="A Very Big Map. Open in New Tab is recommended" width={3000} height={1688} layout="responsive" sizes="(max-width: 768px) 100vw, 33vw" priority /><br />
-            <center><span className="center" placeholder="blur" style={{ "text-align": "center"}} >The Map of the World of Dunnyet (Recommended to open in a new Tab)</span><span className="fnnum">.</span><span className="fncon">Dunnyet is the agreed upon name for the planet where the Empire resides.</span></center>
+            <Image src="https://i.ibb.co.com/gMvWWFq/1-0-No-Cities-Artboard-1-2-5x.png"   alt="A Very Big Map. Open in New Tab is recommended" width={3000} height={1688} layout="responsive" sizes="(max-width: 768px) 100vw, 33vw" priority /><br />
+            <center><span className="center" placeholder="blur" style={{ "text-align": "center"}} >The Map of the World of Dunnyet (Recommended to open in a new <Link href="https://ibb.co.com/vqQKwsP">Tab</Link>)</span><span className="fnnum">.</span><span className="fncon">Dunnyet is the agreed upon name for the planet where the Empire resides.</span></center>
           </div>
           <div className="col-xl-12">
             <br />
