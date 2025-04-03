@@ -36,11 +36,11 @@ const Navbar = () => {
                 <span>Home</span>
               </Link>
             </li>
-            <li className="nav-item pt-3">
+            {/* <li className="nav-item pt-3">
               <Link href="/index" className="nav-link link-module">
               <span>Index</span>
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item pt-3">
               <Link href="/worlds" className="nav-link link-module">
               <span>Worlds</span>
