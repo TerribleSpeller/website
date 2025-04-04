@@ -364,3 +364,20 @@ Unique Shit
 }
 
 
+/* Viggie Politicube */
+
+/*Bureaucracy Manifest*/
+
+.h1-title {
+  display: flex; /* Make the parent a flex container */
+  align-items: center; /* Vertically align the text and the line */
+  position: relative; /* Ensure the pseudo-element is positioned relative to the parent */
+}
+
+.h1-title::after {
+  content: "";
+  background: rgb(255, 255, 255); /* White line */
+  flex-grow: 1; /* Make the line expand to fill the remaining space */
+  height: 0.0625rem; /* Thin line */
+  margin: auto auto auto 1.25rem; /* Add spacing to the left of the line */
+}
