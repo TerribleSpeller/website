@@ -278,4 +278,19 @@ Unique Shit
   height: 33vh;
 }
 
+.fade-section {
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity */
+  display: none; /* Prevent interaction when hidden */
+}
 
+.fade-section.visible {
+  opacity: 1; /* Fully visible */
+  display: block; /* Allow interaction */
+}
+
+.fade-section.hidden {
+  opacity: 0; /* Fully hidden */
+  display: block; /* Keep the element in the flow during the transition */
+  pointer-events: none; /* Prevent interaction while fading out */
+}

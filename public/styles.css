@@ -381,3 +381,29 @@ Unique Shit
   height: 0.0625rem; /* Thin line */
   margin: auto auto auto 1.25rem; /* Add spacing to the left of the line */
 }
+
+.fade-section {
+  opacity: 0; /* Start hidden */
+  max-height: 0; /* Collapse the element vertically */
+  overflow: hidden; /* Prevent content from overflowing when height is 0 */
+  transition:  max-height 1.0s ease, opacity 0.5s ease; /* Smooth transition for opacity and max-height */
+  pointer-events: none; /* Prevent interaction when hidden */
+}
+
+.fade-section.visible {
+  opacity: 1; /* Fully visible */
+  max-height: 1000px; /* Set a large enough value to fit the content */
+  pointer-events: auto; /* Allow interaction */
+}
+
+.fade-section.visible-content {
+  opacity: 1; /* Fully visible */
+  max-height: none; /* Set a large enough value to fit the content */
+  pointer-events: auto; /* Allow interaction */
+}
+
+.fade-section.hidden {
+  opacity: 0; /* Fully hidden */
+  max-height: 0; /* Collapse the element vertically */
+  pointer-events: none; /* Prevent interaction while fading out */
+}
