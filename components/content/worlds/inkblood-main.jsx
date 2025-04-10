@@ -73,8 +73,8 @@ function inkbloodsMain() {
                             <Image
                               className="mx-auto"
                               src={"/images/ponyTowns/viggies/" + row.Name + ".png"}
-                              width={100}
-                              height={125}
+                              width={128}
+                              height={128}
                               alt="Cool Avatar I swear"
                             />
                           </div>
