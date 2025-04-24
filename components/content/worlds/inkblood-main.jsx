@@ -6,6 +6,7 @@ import Image from 'next/image';
 
 function inkbloodsMain() {
   const [data, setData] = useState([]);
+  const [racist, setRacist] = useState(-2); // Default value for the racist filter
   useEffect(() => {
     fetch("/ocdata.csv") // Ensure `data.csv` is inside `public/`
       .then((response) => response.text())
@@ -18,10 +19,11 @@ function inkbloodsMain() {
           Department: row["Department"],
           Rank: row["Rank"],
           PolAff: row["Political Affliation"],
-          PolAffDetail: row["Pol. Aff."],
+          PolAffDetail: row["PolAffDetail"],
           Racist: row["Racist?"],
           Belief: row["Belief"],
           Personality: row["Personality / Politics"],
+          Coordinates: [parseInt(row["Y"]), parseInt(row["Z"]), parseInt(row["X"])],
         }));
         setData(filteredData);
       });
@@ -37,6 +39,10 @@ function inkbloodsMain() {
 
   const chunkedData = chunkData(data, 5); // Split data into chunks of 5
 
+  const filteredData = data.filter(
+    (item) => item.Coordinates[2] === parseInt(racist)
+  );
+
   return (
     <div className="container">
       <div className="col-lg">
@@ -48,14 +54,31 @@ function inkbloodsMain() {
         </div>
         <div>
           <h2>Vigilants</h2>
-          <div className="d-flex justify-content-center align-items-center"> {/* Centers content relative to the page */}
+          <div className="row mb-2">
+            <div className="d-flex justify-content-center align-items-center col-6">
+              <label className="me-3 col-2">
+                Racism Selecter
+              </label>
+              <select className="form-select mx-2" aria-label="Default select example" value={racist} onChange={(e) => setRacist(e.target.value)}>
+                <option disabled>Pick a Racism Level</option>
+                <option value="-2">Not Racist</option>
+                <option value="-1">Not that Racist</option>
+                <option value="0">Mildly Racist</option>
+                <option value="1">Racister</option>
+                <option value="2">Gamer</option>
+              </select>
+            </div>
+
+
+          </div>
+          <div className="d-flex justify-content-center align-items-center">
             <div className="container">
-              {chunkedData.map((chunk, chunkIndex) => (
-                <div className="row mb-3 justify-content-center" key={chunkIndex}> {/* Centers each row horizontally */}
+              {/* {chunkedData.map((chunk, chunkIndex) => (
+                <div className="row mb-3 justify-content-center" key={chunkIndex}>
                   {chunk.map((row, index) => (
-                    <div key={index} className="col-md-2 p-1 d-flex"> {/* Ensures cards are evenly spaced */}
-                      <div className="card p-2 h-100 d-flex flex-column justify-content-center align-items-center"> {/* Centers content inside the card */}
-                        <div className="row g-0 align-items-center w-200"> {/* Ensures proper alignment */}
+                    <div key={index} className="col-md-2 col-12 p-1 d-flex">
+                      <div className="card p-2 h-100 d-flex flex-column justify-content-center align-items-center">
+                        <div className="row g-0 align-items-center w-300">
                           <div className="col-6">
                             <table className="">
                               <tr>
@@ -83,7 +106,35 @@ function inkbloodsMain() {
                     </div>
                   ))}
                 </div>
-              ))}
+              ))} */}
+              <div className="coordinate-grid">
+                {filteredData.map((item, index) => {
+                  const [x, y] = item.Coordinates; 
+                  return (
+                    <div
+                      key={index}
+                      className="coordinate-item"
+                      style={{
+                        gridColumn: x + 3, 
+                        gridRow: y + 3,    
+                      }}
+                    >
+                      <div className="card p-2">
+                        <h6>{item.Name}</h6>
+                        <strong>{item.PolAff}</strong>
+                        <p>{item.PolAffDetail}</p>
+                        <Image
+                          src={`/images/ponyTowns/viggies/${item.Name}.png`}
+                          width={128}
+                          height={128}
+                          alt={item.Name}
+                        />
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
             </div>
           </div>
         </div>

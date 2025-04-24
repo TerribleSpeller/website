@@ -537,3 +537,17 @@ Unique Shit
 .black-text {
   color: black;
 }
+
+.coordinate-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 200px); /* 10 columns, each 100px wide */
+  grid-template-rows: repeat(5, 200px);    /* 10 rows, each 100px tall */
+  gap: 10px; /* Space between grid items */
+  border: 1px solid #ccc;
+}
+
+.coordinate-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
