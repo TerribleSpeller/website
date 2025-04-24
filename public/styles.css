@@ -540,14 +540,53 @@ Unique Shit
 
 .coordinate-grid {
   display: grid;
-  grid-template-columns: repeat(5, 200px); /* 10 columns, each 100px wide */
-  grid-template-rows: repeat(5, 200px);    /* 10 rows, each 100px tall */
-  gap: 10px; /* Space between grid items */
+  grid-template-columns: repeat(5, minmax(20rem, 20rem)); 
+  grid-template-rows: auto;  
+  gap: 10px; 
   border: 1px solid #ccc;
 }
 
 .coordinate-item {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card-custom {
+  width: 100%; 
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  border: 1px solid #ccc; 
+  border-radius: 0.5rem; 
+  background-color: #fff; 
+}
+
+
+@media (max-width: 768px) {
+  .coordinate-grid {
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 3rem)); 
+  }
+
+  .card-custom {
+    padding: 0.5rem; 
+  }
+}
+
+@media (max-width: 576px) { 
+  .coordinate-grid {
+    grid-template-columns: repeat(1, 1fr );
+    gap: 15px; 
+  }
+
+  .card-custom {
+    padding: 0.5rem; 
+  }
 }

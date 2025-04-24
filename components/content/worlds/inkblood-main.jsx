@@ -109,18 +109,18 @@ function inkbloodsMain() {
               ))} */}
               <div className="coordinate-grid">
                 {filteredData.map((item, index) => {
-                  const [x, y] = item.Coordinates; 
+                  const [x, y] = item.Coordinates; // Use x and y for grid placement
                   return (
                     <div
                       key={index}
                       className="coordinate-item"
                       style={{
-                        gridColumn: x + 3, 
-                        gridRow: y + 3,    
+                        gridColumn: x + 3, // Adjust for grid alignment
+                        gridRow: 3 - y ,    // Adjust for grid alignment
                       }}
                     >
-                      <div className="card p-2">
-                        <h6>{item.Name}</h6>
+                      <div className="card-custom">
+                        <h6>{item.Name} ({x}, {y})</h6>
                         <strong>{item.PolAff}</strong>
                         <p>{item.PolAffDetail}</p>
                         <Image
