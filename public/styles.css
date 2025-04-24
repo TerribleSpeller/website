@@ -407,3 +407,133 @@ Unique Shit
   max-height: 0; /* Collapse the element vertically */
   pointer-events: none; /* Prevent interaction while fading out */
 }
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.revealX {
+  position: relative;
+  transform: translateX(300px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.revealX.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.fakeButtonAura {
+  background-color: #b09081;
+  background-image: url('./images/grey-washed-wall.png');
+}
+
+.show {
+  rotate: 90deg;
+  transition: rotate 0.5s ease-in-out;
+}
+
+.hide {
+  rotate: 0deg;
+  transition: rotate 0.5s ease-in-out;
+}
+
+.clickable {
+  cursor: pointer;
+  transition: transform 0.2s; 
+}
+
+.hideable {
+  opacity: 0;
+  transform: scale(0.95); 
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0.5s ease-in-out, max-height 0.5s ease-in-out;;
+  max-height: 0;
+}
+
+.showable {
+  opacity: 1;
+  transform: scale(1); 
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0.5s ease-in-out, max-height 0.5s ease-in-out;
+  max-height: 99999px; 
+}
+
+.transp {
+    background: linear-gradient(to right, rgba(222,181,162,0),rgba(222,181,162,1)), url('/images/grey-washed-wall.png');
+}
+
+.transp-1 {
+  background: linear-gradient(to right, rgba(222,181,162,0),rgba(222,181,162,1)), url(
+    "/images/ccimages/homepagecovers/Cont.png");
+    background-size: cover;
+    width: 300px; 
+    height: 100px; 
+}
+
+.transp-2 {
+  background: linear-gradient(to right, rgba(222,181,162,0),rgba(222,181,162,1)), url(
+    "/images/ccimages/homepagecovers/Govt.png");
+    background-size: cover;
+    width: 300px; 
+    height: 100px; 
+}
+
+.transp-3 {
+  background: linear-gradient(to right, rgba(222,181,162,0),rgba(222,181,162,1)), url(
+    "/images/ccimages/homepagecovers/Demo.png");
+    background-size: cover;
+    width: 300px; 
+    height: 100px; 
+}
+
+.transp-4 {
+  background: linear-gradient(to right, rgba(222,181,162,0),rgba(222,181,162,1)), url(
+    "/images/ccimages/homepagecovers/ForRel.png");
+    background-size: cover;
+    width: 300px; 
+    height: 100px; 
+}
+
+.transp-5 {
+  background: linear-gradient(to right, rgba(222,181,162,0),rgba(222,181,162,1)), url(
+    "/images/ccimages/homepagecovers/ArmFor.png");
+    background-size: cover;
+    width: 300px; 
+    height: 100px; 
+}
+
+.transp-6 {
+  background: linear-gradient(to right, rgba(222,181,162,0),rgba(222,181,162,1)), url(
+    "/images/ccimages/homepagecovers/Ecom.png");
+    background-size: cover;
+    width: 300px; 
+    height: 100px; 
+}
+
+.transp-7 {
+  background: linear-gradient(to right, rgba(222,181,162,0),rgba(222,181,162,1)), url(
+    "/images/ccimages/homepagecovers/Cult.png");
+    background-size: cover;
+    width: 300px; 
+    height: 100px; 
+}
+
+.transp-8 {
+  background: linear-gradient(to right, rgba(222,181,162,0),rgba(222,181,162,1)), url(
+    "/images/ccimages/homepagecovers/Hist.png");
+    background-size: cover;
+    width: 300px; 
+    height: 100px; 
+}
+
+.black-text {
+  color: black;
+}
