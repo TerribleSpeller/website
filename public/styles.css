@@ -606,19 +606,19 @@ Unique Shit
 }
 
 .viggie-orange {
-  background-color: #ff8200
+  background-color: #ff8200 !important;
 }
 
 .viggie-grey {
-  background-color: #888888;
+  background-color: #888888 !important;
 }
 
 .viggie-green {
-  background-color: #b6d7a8;
+  background-color: #b6d7a8 !important;
 }
 
 .viggie-red {
-  background-color: #ea9999;
+  background-color: #ea9999 !important;
 }
 
 .card-content {
@@ -646,8 +646,8 @@ Unique Shit
   height: auto; /* Full viewport height */
   margin: auto;
   position: absolute;
-  top: 30%;
-  left: 30%;
+  top: 40%;
+  left: 40%;
   transform: translate(-20%);
   z-index: 1;
   background-color: #deb5a2;

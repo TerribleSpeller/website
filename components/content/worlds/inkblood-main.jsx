@@ -61,6 +61,9 @@ function inkbloodsMain() {
   const handleCardClick = (item) => {
     if (item !== targetItem) {
       setTargetItem(item);
+      if (isInfoVisible === false) {
+        setIsInfoVisible(true);
+      }
     } else {
       setIsInfoVisible(!isInfoVisible);
       setTargetItem(item);
@@ -134,7 +137,7 @@ function inkbloodsMain() {
                 })}
               </div>
             </div>
-            <div className={`center-of-page rounded-3 justify-content-center align-items-center ${isInfoVisible ? "showable" : "hideable"} `}  onClick={() => setIsInfoVisible(!isInfoVisible)}>
+            <div className={`center-of-page rounded-3 justify-content-center align-items-center border border-3  ${isInfoVisible ? "showable" : "hideable"}  ${targetItem ? figureOutColour(targetItem) : null} `}  onClick={() => setIsInfoVisible(!isInfoVisible)}>
               <div className="container m-1 p-2">
                 {targetItem && (
                   <div className="row d-flex justify-content-center align-items-center">

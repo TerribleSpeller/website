@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 
 import InkbloodsMain from '../../components/content/worlds/inkblood-main.jsx'
+import Viggiechart from '../../components/content/worlds/viggie/viggie-chart.jsx'
 
 const content = () => {
     return(
@@ -14,6 +15,7 @@ const content = () => {
                 />
             </Head>
             <InkbloodsMain />
+            <Viggiechart />
         </>
 
     )
