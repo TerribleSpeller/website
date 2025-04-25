@@ -20,7 +20,7 @@ function Worlds() {
             <p className="card-text mb-auto" style={{ "text-align": "justify" }}>
                 A Knight Order characterised by their adherence to duty and justice. An aspect from Rekindled Embers that I got obsessed over and continued to worldbuild with semi-canon elements. The Knights of the Order of the Vigilant are a group of knights who are sworn to protect the innocent, uphold justice, and the tenants of Saint Applejack - may or may not majorly be corrupt, insane, esoteric, and or unhelpfully bureaucratic. 
             </p>
-            <h5><Link href="/worlds/inkbloods-main" className="nav-link">Read More</Link></h5>
+            <h5><Link href="/worlds/vigilant-main" className="nav-link">Read More</Link></h5>
           </div>
         </div>  
       </div>

@@ -621,6 +621,10 @@ Unique Shit
   background-color: #ea9999 !important;
 }
 
+.viggie-Bureaucrat {
+  background-color: #ffffff !important;
+}
+
 .card-content {
   display: flex;
   flex-direction: row; /* Align text and image side by side */

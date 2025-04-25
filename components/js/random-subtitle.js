@@ -18,6 +18,7 @@ export default function Change() {
         "Soteria raised an eyebrow, 'A thousand lumens? That is it? I would have presumed irreality incursions would be dealt with more issues.'",
         "Medical sighed as he shook his head, “You are incorrigible, you know?”",
         "'You didn't... antagonise them, did you?' Dipoly asked offhoofedly.",
+        "And in his haste and negligence to check, as well as his distracted state, he walked muzzfirst into said door."
     ]
        
     

@@ -27,8 +27,8 @@ function bureaucracyMain() {
                     <div
                         id="intro"
                         className={`fade-section ${buttonclicked ? "hidden" : "visible"}`} // Add animation classes
-                    >                        
-                    <div className="d-flex justify-content-center align-items-center" >
+                    >
+                        <div className="d-flex justify-content-center align-items-center" >
                             <div className="mx-5" style={{ "max-width": "40vw" }}>
                                 <div className="card p-1 border-2 border-black bg-dark-subtle">
                                     <div className="container p-2 email" >

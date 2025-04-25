@@ -39,6 +39,7 @@ export default function Viggiechart() {
         'Radical': 'rgb(234, 153, 153)', // #ea9999
         'Modernist': 'rgb(136, 136, 136)', // #888888
         'Purist': 'rgb(255, 130, 0)', // #ff8200
+        'Bureaucrat': 'rgb(255, 255, 255)', // #ffcd56
     };
 
     const beliefColours = {
@@ -46,7 +47,7 @@ export default function Viggiechart() {
         'Discordant-Leaning': 'rgb(221, 198, 135)', // #e8b787
         'Diarchist': ' rgb(179,151,181)', // #c9c9c9
         'Diarchist-Leaning': 'rgb(230,207,242)', // #7ebeea
-        'Schizophrenic': 'rgb(232, 234, 237)', // #ff8200
+        'Schizophrenic': 'rgb(84, 147, 241)', // #ff8200
     }
 
 

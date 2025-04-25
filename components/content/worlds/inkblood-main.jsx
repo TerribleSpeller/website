@@ -55,6 +55,8 @@ function inkbloodsMain() {
       return "viggie-grey"
     } else if (item.PolAff === "Purist") {
       return "viggie-orange"
+    } else if (item.PolAff === "Bureaucrat") {
+      return "viggie-Bureaucrat"
     }
   }
 
@@ -145,7 +147,8 @@ function inkbloodsMain() {
                       <h6>{targetItem.Name} ({targetItem.Gender === "Male" ? "M" : "F"})</h6>
                       <p><strong>Age:</strong> {targetItem.Age} (Born: {targetItem.BirthDate})</p>
                       <p><strong>Rank:</strong> {targetItem.Rank}</p>
-                      <p><strong>Political Affliation:</strong> {targetItem.PolAffDetail}</p>
+                      <p><strong>Pol. Affliation:</strong> {targetItem.PolAff}</p>
+                      <p><strong>Ideology:</strong> {targetItem.PolAffDetail}</p>
                       <p><strong>Personality:</strong></p>
                       <p> {targetItem.Personality}</p>
 
