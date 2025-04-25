@@ -7,6 +7,8 @@ import Image from 'next/image';
 function inkbloodsMain() {
   const [data, setData] = useState([]);
   const [racist, setRacist] = useState(-2); // Default value for the racist filter
+  const [isInfoVisible, setIsInfoVisible] = useState(false);
+  const [targetItem, setTargetItem] = useState(null);
   useEffect(() => {
     fetch("/ocdata.csv") // Ensure `data.csv` is inside `public/`
       .then((response) => response.text())
@@ -15,6 +17,7 @@ function inkbloodsMain() {
         const filteredData = parsed.data.map((row) => ({
           Name: row["Name"],
           Age: row["Age"],
+          BirthDate: row["BirthDate"],
           Gender: row["Gender"],
           Department: row["Department"],
           Rank: row["Rank"],
@@ -42,6 +45,30 @@ function inkbloodsMain() {
   const filteredData = data.filter(
     (item) => item.Coordinates[2] === parseInt(racist)
   );
+
+  const figureOutColour = (item) => {
+    if (item.PolAff === "Liberal") {
+      return "viggie-green";
+    } else if (item.PolAff === "Radical") {
+      return "viggie-red"
+    } else if (item.PolAff === "Modernist") {
+      return "viggie-grey"
+    } else if (item.PolAff === "Purist") {
+      return "viggie-orange"
+    }
+  }
+
+  const handleCardClick = (item) => {
+    if (item !== targetItem) {
+      setTargetItem(item);
+    } else {
+      setIsInfoVisible(!isInfoVisible);
+      setTargetItem(item);
+    }
+
+  }
+
+
 
   return (
     <div className="container">
@@ -72,42 +99,8 @@ function inkbloodsMain() {
 
           </div>
           <div className="d-flex justify-content-center align-items-center">
-            <div className="container">
-              {/* {chunkedData.map((chunk, chunkIndex) => (
-                <div className="row mb-3 justify-content-center" key={chunkIndex}>
-                  {chunk.map((row, index) => (
-                    <div key={index} className="col-md-2 col-12 p-1 d-flex">
-                      <div className="card p-2 h-100 d-flex flex-column justify-content-center align-items-center">
-                        <div className="row g-0 align-items-center w-300">
-                          <div className="col-6">
-                            <table className="">
-                              <tr>
-                                <td valign="top"><h6 className="card-title">{row.Name}</h6></td>
-                              </tr>
-                              <tr>
-                                <td valign="top" className=""><strong>{row.PolAff}</strong></td>
-                              </tr>
-                              <tr>
-                                <td valign="top" className="">{row.PolAffDetail}</td>
-                              </tr>
-                            </table>
-                          </div>
-                          <div className="col-6  align-items-center">
-                            <Image
-                              className="mx-auto"
-                              src={"/images/ponyTowns/viggies/" + row.Name + ".png"}
-                              width={128}
-                              height={128}
-                              alt="Cool Avatar I swear"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              ))} */}
-              <div className="coordinate-grid">
+            <div className="container justify-content-center align-items-center">
+              <div className="coordinate-grid mx-auto">
                 {filteredData.map((item, index) => {
                   const [x, y] = item.Coordinates; // Use x and y for grid placement
                   return (
@@ -115,26 +108,56 @@ function inkbloodsMain() {
                       key={index}
                       className="coordinate-item"
                       style={{
-                        gridColumn: x + 3, // Adjust for grid alignment
-                        gridRow: 3 - y ,    // Adjust for grid alignment
+                        gridColumn: x + 3,
+                        gridRow: 3 - y,
                       }}
                     >
-                      <div className="card-custom">
-                        <h6>{item.Name} ({x}, {y})</h6>
-                        <strong>{item.PolAff}</strong>
-                        <p>{item.PolAffDetail}</p>
-                        <Image
-                          src={`/images/ponyTowns/viggies/${item.Name}.png`}
-                          width={128}
-                          height={128}
-                          alt={item.Name}
-                        />
+                      <div className={`card-custom ${figureOutColour(item)}`} onClick={() => handleCardClick(item)}>
+                        <div className="card-content"  onClick={() => handleCardClick(item)}> 
+                          <div className="text-content"  onClick={() => handleCardClick(item)}>
+                            <h6>{item.Name}</h6>
+                            <strong>{item.PolAff}</strong>
+                            {/* <p>{item.PolAffDetail}</p> */}
+                          </div>
+                          <div className="image-content"  onClick={() => handleCardClick(item)}>
+                            <Image
+                              src={`/images/ponyTowns/viggies/${item.Name}.png`}
+                              width={100}
+                              height={100}
+                              alt={item.Name}
+                            />
+                          </div>
+                        </div>
                       </div>
                     </div>
                   );
                 })}
               </div>
+            </div>
+            <div className={`center-of-page rounded-3 justify-content-center align-items-center ${isInfoVisible ? "showable" : "hideable"} `}  onClick={() => setIsInfoVisible(!isInfoVisible)}>
+              <div className="container m-1 p-2">
+                {targetItem && (
+                  <div className="row d-flex justify-content-center align-items-center">
+                    <div className="col-7">
+                      <h6>{targetItem.Name} ({targetItem.Gender === "Male" ? "M" : "F"})</h6>
+                      <p><strong>Age:</strong> {targetItem.Age} (Born: {targetItem.BirthDate})</p>
+                      <p><strong>Rank:</strong> {targetItem.Rank}</p>
+                      <p><strong>Political Affliation:</strong> {targetItem.PolAffDetail}</p>
+                      <p><strong>Personality:</strong></p>
+                      <p> {targetItem.Personality}</p>
 
+                    </div>
+                    <div className="col-5">
+                      <Image
+                        src={`/images/ponyTowns/viggies/allPonesStd256x256/${targetItem.Name}.png`}
+                        width={256}
+                        height={256}
+                        alt={targetItem.Name}
+                      />
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>

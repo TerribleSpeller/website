@@ -457,6 +457,7 @@ Unique Shit
   transform: scale(0.95); 
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0.5s ease-in-out, max-height 0.5s ease-in-out;;
   max-height: 0;
+  overflow: hidden; 
 }
 
 .showable {
@@ -464,6 +465,7 @@ Unique Shit
   transform: scale(1); 
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0.5s ease-in-out, max-height 0.5s ease-in-out;
   max-height: 99999px; 
+  overflow: visible; 
 }
 
 .transp {
@@ -540,11 +542,17 @@ Unique Shit
 
 .coordinate-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(20rem, 20rem)); 
+  grid-template-columns: repeat(5, minmax(17rem, 17rem)); 
+  grid-template-areas: "a b c d e";
   grid-template-rows: auto;  
   gap: 10px; 
-  border: 1px solid #ccc;
+  justify-content: center; /* Center the grid horizontally */
+  align-items: center; /* Center the grid vertically */
+  width: 100%; 
+  overflow: auto;
+
 }
+
 
 .coordinate-item {
   width: 100%;
@@ -572,7 +580,6 @@ Unique Shit
 
 @media (max-width: 768px) {
   .coordinate-grid {
-    grid-template-columns: repeat(auto-fit, minmax(3rem, 3rem)); 
   }
 
   .card-custom {
@@ -582,11 +589,67 @@ Unique Shit
 
 @media (max-width: 576px) { 
   .coordinate-grid {
-    grid-template-columns: repeat(1, 1fr );
+    grid-template-columns: 1fr;
     gap: 15px; 
+    /* grid-template-areas: "a b c d e"; */
+
+  }
+
+  .card-content {
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center;
   }
 
   .card-custom {
     padding: 0.5rem; 
   }
+}
+
+.viggie-orange {
+  background-color: #ff8200
+}
+
+.viggie-grey {
+  background-color: #888888;
+}
+
+.viggie-green {
+  background-color: #b6d7a8;
+}
+
+.viggie-red {
+  background-color: #ea9999;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row; /* Align text and image side by side */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.text-content {
+  flex: 1; /* Take up available space */
+  text-align: left; /* Align text to the left */
+  padding-right: 1rem; /* Add spacing between text and image */
+}
+
+.image-content {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.center-of-page {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Full viewport height */
+  margin: auto;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-20%);
+  z-index: 1;
+  background-color: #deb5a2;
+  width: 70vh;
 }
