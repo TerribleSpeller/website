@@ -15,7 +15,7 @@ function inkbloodsMain() {
       .then((csvText) => {
         const parsed = Papa.parse(csvText, { header: true });
         const filteredData = parsed.data.map((row) => ({
-          Name: row["Name"],
+          Name: row["Name"]  ? row["Name"].trim().replace(/_+$/, '') : '',
           Age: row["Age"],
           BirthDate: row["BirthDate"],
           Gender: row["Gender"],
