@@ -657,3 +657,9 @@ Unique Shit
   background-color: #deb5a2;
   width: 70vh;
 }
+
+.section-head {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}

@@ -17,7 +17,7 @@ function inkbloodsMain() {
         const filteredData = parsed.data.map((row) => ({
           Name: row["Name"]  ? row["Name"].trim().replace(/_+$/, '') : '',
           Age: row["Age"],
-          BirthDate: row["BirthDate"],
+          BirthDate: row["Birth Date YYYY/MM/DD"],
           Gender: row["Gender"],
           Department: row["Department"],
           Rank: row["Rank"],
