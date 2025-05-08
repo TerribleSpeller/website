@@ -8,7 +8,7 @@ const content = () => {
     return(
         <>
             <Head>
-                <title>Inkbloods Main - TerribleSpeller's Website</title>
+                <title>Vigilant Main - TerribleSpeller's Website</title>
                 <meta
                  name="description"
                  content="TerribleSpeller's Website - The Website of a Worldbuilder who can't spell well"
